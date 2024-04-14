@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <div className='container-fluid text-center login-container d-flex justify-content-center bg-light'>
 
-        <div className='card shadow rounded login-card'>
+        <div className='card shadow rounded login-card mt-5'>
             <div className='d-flex justify-content-center m-5'>
                 <img src={logo} className='img-fluid' />
             </div>
