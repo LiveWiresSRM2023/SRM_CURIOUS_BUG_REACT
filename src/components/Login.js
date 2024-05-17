@@ -5,26 +5,47 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const Login = () => {
   return (
-    <div className='container-fluid text-center login-container d-flex justify-content-center bg-light'>
 
-        <div className='card shadow rounded login-card mt-5'>
-            <div className='d-flex justify-content-center m-5'>
-                <img src={logo} className='img-fluid' />
-            </div>
+    <div className='flex flex-col justify-center items-center h-[100vh] bg-[#F4F4F4]'>
+      <div className='pb-10'>
+      <img src={logo} className='h-[80px] w-[150px] ' alt="" />
+      </div>
 
-            <div className='mx-5'>
-                <h4>Explore, share and ignite your new research</h4>
-                <p className='my-3'>"Dive into the Depths of Discovery: Unleash the<br />Power of Research at Your Fingertips."</p>
-            </div>
-            
-            <div className='login-div m-5'>
-               <h5>Sign in with Google</h5>
-               <button className='btn mt-2 px-4'><FontAwesomeIcon icon={faGoogle} className='me-2' /> Google</button> 
-            </div>
-            
-        </div>
+      <div className='p-1 flex flex-col '>
+         <label htmlFor="" className='font-bold pb-2' >First name</label>
+         <input className='w-[400px] h-[35px] rounded shadow-sm ' type="text" />
+      </div>
+         
+      <div className='p-1 flex flex-col'>
+         <label htmlFor="" className='font-bold pb-2'>Last name</label>
+         <input className='w-[400px] h-[35px] rounded shadow-sm' type="text" />
+      </div>
 
+      <div className='p-1 flex flex-col'>
+           <label htmlFor="" className='font-bold pb-2'>College</label>
+           <input className='w-[400px] h-[35px] rounded shadow-sm' type="text" />
+      </div>
+
+      <div className='p-1 flex flex-col'>
+         <label htmlFor="" className='font-bold pb-2'>Department</label>
+         <input className='w-[400px] h-[35px] rounded shadow-sm' type="text" />
+      </div>
+
+      <div className='p-1 flex flex-col'>
+           <label htmlFor="" className='font-bold pb-2'>Position</label>
+           <input className='w-[400px] h-[35px] rounded shadow-sm' type="text" />
+      </div>
+
+      <div className='flex justify-center items-center p-3 gap-1'>
+        <input type="checkbox" id='check' className='accent-[#DE9A3A]' />
+        <label htmlFor="check" className='text-[13px]'>I agree to the Terms of Service and acknowledge the privacy policy</label>
+        
+      </div>
+
+      <button className='w-[400px] h-[35px] rounded bg-[#DE9A3A] font-bold' >Continue</button>
     </div>
+
+    
   )
 }
 
