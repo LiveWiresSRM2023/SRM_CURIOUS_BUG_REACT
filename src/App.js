@@ -1,6 +1,6 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Landing from "./components/Landing.js";
 import Login from './components/Login.js';
-
 
 const App = () => {
   return (
@@ -8,9 +8,9 @@ const App = () => {
       <BrowserRouter>
         {/* <Navbar /> */}
         <Routes>
-          
-          <Route exact path='/login' Component={Login} />
-         
+          <Route path='/' element={<Landing />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/landing' element={<Landing />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
@@ -18,4 +18,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
