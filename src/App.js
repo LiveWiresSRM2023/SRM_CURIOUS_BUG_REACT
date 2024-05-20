@@ -4,8 +4,6 @@ import Login from './components/Login.js';
 import Signin from './components/Signin.js';
 import Home from './components/Home.js';
 
-
-
 const App = () => {
   return (
     <div className="App">
