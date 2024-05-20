@@ -1,7 +1,5 @@
 import React from 'react';
 import logo from '../assets/images/logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const Login = () => {
   return (
