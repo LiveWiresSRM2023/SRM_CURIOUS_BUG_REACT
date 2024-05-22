@@ -5,6 +5,7 @@ import Signin from './components/Signin.js';
 import Home from './components/Home.js';
 
 
+
 const App = () => {
   return (
     <div className="App">
@@ -16,7 +17,6 @@ const App = () => {
           <Route path='/landing' element={<Landing />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/Home' element={<Home/>} />
-
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
