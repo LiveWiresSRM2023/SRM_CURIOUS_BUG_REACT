@@ -3,6 +3,8 @@ import Landing from "./components/Landing.js";
 import Login from './components/Login.js';
 import Signin from './components/Signin.js';
 import Home from './components/Home.js';
+import Profile from "./components/Profilepage.js";
+
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
            <Route path='/Home' element={<Home/>} />
 
 
+          <Route path='/Home' element={<Home/>} />
+        <Route exact path='/profile' Component={Profile} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
