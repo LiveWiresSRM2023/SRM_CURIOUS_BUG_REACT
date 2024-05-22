@@ -1,5 +1,6 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Login from './components/Login.js';
+import Profile from "./components/Profilepage.js";
 
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
         <Routes>
           
           <Route exact path='/login' Component={Login} />
-         
+          <Route exact path='/profile' Component={Profile} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
