@@ -5,6 +5,12 @@ import email from '../assets/icons/gmail.png'
 import github from '../assets/icons/github.png'
 import twitter from '../assets/icons/twitter.png'
 import actimg from '../assets/images/Techutsav Certificate  3.png'
+import logo from "../assets/images/logo.png"
+import notif from '../assets/icons/navpronot.png'
+import message from '../assets/icons/navpromes.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown , faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+
 
 function Activity() {
    return(
@@ -44,6 +50,21 @@ function Youknow() {
 
 const Profile = () => {
  return(
+   <>
+   <div className="w-[100%] bg-white h-[65px] flex items-center justify-around ">
+      <img src={logo} alt="" className="h-[50px] w-[100px]" />
+      <div className="bg-[#F4F4F4] pl-[10px] pr-[15px] rounded-[25px] border-[#DE9A3A] border-[1px]">
+      <FontAwesomeIcon icon={faMagnifyingGlass} />
+      <input type="text" className="w-[600px] h-[40px] bg-[#F4F4F4] pl-[5px] focus:border-none focus:outline-none" placeholder="Search Curious Bees"/>
+      </div>
+      <button className="bg-[#DE9A3A] rounded-[30px] w-[90px] h-[35px] text-[13px]">Create +</button>
+      <img src={notif} alt="" className="h-[25px] w-[25px]"/>
+      <img src={message} alt="" className="h-[30px] w-[30px]" />
+      <div className="flex items-center gap-2">
+      <img src={pic} alt="" className="h-[30px] w-[30px] rounded-[50%] object-cover" />
+      <FontAwesomeIcon icon={faChevronDown}  />
+      </div>
+   </div>
     <div className=' w-[100%] flex  bg-[#F4F4F4] ' >
      
         <div className="w-[73%] flex flex-col items-center">
@@ -149,6 +170,7 @@ const Profile = () => {
          
         </div>
     </div>
+    </>
 
 )
     

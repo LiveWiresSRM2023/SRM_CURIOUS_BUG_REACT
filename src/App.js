@@ -20,7 +20,7 @@ const App = () => {
 
 
           <Route path='/Home' element={<Home/>} />
- <Route exact path='/profile' Component={Profile} />
+        <Route exact path='/profile' Component={Profile} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
