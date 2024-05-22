@@ -2,10 +2,9 @@ import React from 'react';
 import landingImage from '../assets/images/landing_img.png';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const Landing = () => {
   const navigate = useNavigate();
+
   return (
     <div className="bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center text-white" style={{backgroundImage: `url(${landingImage})`}}>
       <h4 className="absolute top-0 left-0 mt-4 ml-8 font-bold text-2xl" style={{ fontFamily: 'Archivo, sans-serif' }}>

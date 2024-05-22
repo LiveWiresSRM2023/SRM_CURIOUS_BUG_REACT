@@ -1,13 +1,11 @@
 import logo from '../assets/images/logo.png'; 
 import googleLogo from '../assets/images/google-icon.png';
-
-
 import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { auth, provider } from '../configuration/firebase';
 import { signInWithPopup } from 'firebase/auth';
-import Login from './Login';
+// import Login from './Login';
 import APP from './Login';
 
 
@@ -51,11 +49,13 @@ const Signin = () => {
           Sign In with Google
         </h6>
         <button className="mx-auto py-2 px-8 flex items-center justify-center  rounded-full text-white text-base mt-4 mb-12" onClick={handleClick} style={{ backgroundColor: '#DE9A3A', fontFamily: 'Inter, sans-serif' }}>
+
           <img src={googleLogo} alt="Google Logo" className="w-6 h-6 mr-2" />
           Google
         </button>
       </div>
     </div>
+
       }
     </div>
   );
