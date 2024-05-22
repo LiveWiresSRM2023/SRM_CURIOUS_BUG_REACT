@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from '../assets/images/logo.png';
-
+import logo from '../assets/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const Login = () => {
   return (
@@ -9,7 +10,7 @@ const Login = () => {
       <div className='pb-10'>
       <img src={logo} className='h-[80px] w-[150px] ' alt="" />
       </div>
-
+      
       <div className='p-1 flex flex-col '>
          <label htmlFor="" className='font-bold pb-2' >First name</label>
          <input className='w-[400px] h-[35px] rounded shadow-sm ' type="text" />
