@@ -43,11 +43,6 @@ function Youknow() {
    )
    
 }
-
-
-
-
-
 const Profile = () => {
  return(
    <>
@@ -62,7 +57,7 @@ const Profile = () => {
       <img src={message} alt="" className="h-[30px] w-[30px]" />
       <div className="flex items-center gap-2">
       <img src={pic} alt="" className="h-[30px] w-[30px] rounded-[50%] object-cover" />
-      <FontAwesomeIcon icon={faChevronDown}  />
+      <FontAwesomeIcon icon={faChevronDown} />
       </div>
    </div>
     <div className=' w-[100%] flex  bg-[#F4F4F4] ' >

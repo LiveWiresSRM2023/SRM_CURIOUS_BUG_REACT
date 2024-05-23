@@ -1,11 +1,17 @@
-
 import logo from '../assets/images/logo.png';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+
 import React, { useState, useEffect } from 'react';
 import { firestore, auth } from '../configuration/firebase'; // Import your Firestore instance and auth
 import { Navigate } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
 
+  
+
 const Login = () => {
+
+
   const [currentUser, setCurrentUser] = useState(null);
   const [firstName, setFirstName] = useState("");
   const [department, setDepartment] = useState("");
@@ -60,7 +66,7 @@ const Login = () => {
 
   // Render Navigate component if redirect state is true
   if (redirect) {
-    return <Navigate to="/feed" />;
+    return <Navigate to="/Home"/>;
   }
 
 
@@ -68,9 +74,9 @@ const Login = () => {
 
     <div className='flex flex-col justify-center items-center h-[100vh] bg-[#F4F4F4]'>
       <div className='pb-10'>
-      <img src={logo} className='h-[80px] w-[150px] ' alt="" />
+      <img src={logo} className='h-[80px] w-[150px] ' alt="..." />
       </div>
-      
+
       <div className='p-1 flex flex-col '>
          <label htmlFor="" className='font-bold pb-2' >First name</label>
          <input className='w-[400px] h-[35px] rounded shadow-sm ' type="text" 
