@@ -3,6 +3,7 @@ import Landing from "./components/Landing.js";
 import Login from './components/Login.js';
 import Signin from './components/Signin.js';
 import Home from './components/Home.js';
+import Feed from './components/Feed.js';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/landing' element={<Landing />} />
           <Route path='/signin' element={<Signin />} />
            <Route path='/Home' element={<Home/>} />
+           <Route path='/Feed' element={<Feed/>} />
 
 
         </Routes>

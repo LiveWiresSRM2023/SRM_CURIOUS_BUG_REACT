@@ -6,21 +6,22 @@ import React, { useEffect, useState } from 'react';
 import { auth, provider } from '../configuration/firebase';
 import { signInWithPopup } from 'firebase/auth';
 // import Login from './Login';
-import APP from './Login';
-
+import Feed from './Feed';
+import { Navigate } from 'react-router-dom';
 
 
 const Signin = () => {
 
   const [value, setValue] = useState("");
   const [uid, setUid] = useState(""); // New state to hold UID
-
+  const [redirect,setRedirect]=useState(null)
   const handleClick = () => {
     signInWithPopup(auth, provider).then((data) => {
-      setValue(data.user.email);
-      setUid(data.user.uid); // Capture the UID
+      // setValue(data.user.email);
+      // setUid(data.user.uid); // Capture the UID
       localStorage.setItem("email", data.user.email);
       localStorage.setItem("uid", data.user.uid); // Store UID in localStorage
+      setRedirect(true);
     });
   };
 
@@ -28,12 +29,14 @@ const Signin = () => {
     setValue(localStorage.getItem('email'));
     setUid(localStorage.getItem('uid')); // Retrieve UID from localStorage
   }, []);
+ 
 
 
   return (
 
     <div>
-      {value ? <APP uid={uid} /> :
+      
+      {value ? <Navigate to="/feed" /> :
     <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="bg-white p-6 rounded-lg shadow-md text-center">
         <img src={logo} alt="Logo" className="h-32 mx-auto mt-20 mb-12" />
@@ -55,9 +58,17 @@ const Signin = () => {
         </button>
       </div>
     </div>
+  
 
       }
+   
+   
+  {redirect ?
+  <Navigate to="/login" /> : ""}
+
+
     </div>
+    
   );
 };
 
