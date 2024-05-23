@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Feed from "./Feed"
 
-const feed = () => {
+const Home = () => {
   return (
     
     <div>
@@ -17,4 +17,4 @@ const feed = () => {
   )
 }
 
-export default feed
+export default Home

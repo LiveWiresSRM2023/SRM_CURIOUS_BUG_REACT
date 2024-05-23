@@ -60,7 +60,7 @@ const Login = () => {
 
   // Render Navigate component if redirect state is true
   if (redirect) {
-    return <Navigate to="/feed" />;
+    return <Navigate to="/Home" />;
   }
 
 

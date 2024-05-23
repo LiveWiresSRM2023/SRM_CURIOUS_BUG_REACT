@@ -36,7 +36,7 @@ const Signin = () => {
 
     <div>
       
-      {value ? <Navigate to="/feed" /> :
+      {value ? <Navigate to="/home" /> :
     <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="bg-white p-6 rounded-lg shadow-md text-center">
         <img src={logo} alt="Logo" className="h-32 mx-auto mt-20 mb-12" />
