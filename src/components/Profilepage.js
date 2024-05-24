@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import pic from "../assets/images/pfp.jpg"
 import cover from '../assets/images/Rectangle 14.png'
 import email from '../assets/icons/gmail.png'
@@ -11,6 +11,7 @@ import message from '../assets/icons/navpromes.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown , faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import Navbar from "./Navbar";
+import { firestore,auth } from "../configuration/firebase";
 
 
 function Activity() {
@@ -29,13 +30,14 @@ function Activity() {
    ) 
 }
 
+
 function Youknow() {
    return(
       <>
       <div className="flex items-center gap-4 pb-3 pt-3">
       <img src={pic} alt="" className="h-[60px] w-[60px] rounded-[50%] object-cover" />
       <div>
-         <h3 className="font-semibold text-[18px] "> Seyadu Raja K</h3>
+         <h3 className="font-semibold text-[18px] ">Seyadu Raja K</h3>
          <h5 className="font-semibold text-[15px]">React Developer</h5>
       </div>
    </div>
@@ -45,6 +47,52 @@ function Youknow() {
    
 }
 const Profile = () => {
+
+
+    const  [userData, setUserData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [userName,setUserName] =useState("");
+    const [photoURL,setPhotoUrl]=useState("");
+    const [userEmail,setUserEmail]=useState("");
+
+
+
+    useEffect(() => {
+      const fetchData = async () => {
+          try {
+              const user = auth.currentUser; // Get the current user
+              if (user) {
+                  const userId = user.uid;
+                  setUserName(user.displayName)
+                  setPhotoUrl(user.photoURL)
+                  setUserEmail(user.email)// Get the user ID
+                  const userRef = await firestore.collection("profile").doc(userId).get(); // Use userId as the document ID
+                  if (userRef.exists) {
+                      setUserData(userRef.data());
+                  } else {
+                      setError("Document does not exist");
+                  }
+              } else {
+                  setError("User is not authenticated");
+              }
+          } catch (error) {
+              console.error("Error fetching document:", error);
+              setError("Error fetching document");
+          } finally {
+              setLoading(false);
+          }
+      };
+
+      fetchData();
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+
+
+
+
  return(
    <>
    <div>
@@ -71,12 +119,12 @@ const Profile = () => {
             <div className="">
                <img src={cover} alt="" className="p-4 " />
                <div className="mt-[-85px] ml-[30px] ">
-                   <img src={pic} alt="" className="h-[130px] w-[130px] rounded-[50%] object-cover  " />
+                   <img src={photoURL} alt="" className="h-[130px] w-[130px] rounded-[50%] object-cover  " />
                </div>
                <div className="flex items-center ">
                <div className="pt-3 pb-3 pl-4 ">
-                     <h1 className="font-bold text-[25px]">Seyadu Raja K<span className="text-[15px] font-normal"> @raja_seyadu</span> </h1> 
-                     <h2 className="font-bold text-[17px]">React Developer</h2>
+                     <h1 className="font-bold text-[25px]">{userName}<span className="text-[15px] font-normal">{userEmail}</span> </h1> 
+                     <h2 className="font-bold text-[17px]">{userData.position}</h2>
                      <h3 className="text-[15px] font-normal">Chennai,Tamilnadu,India</h3>
                </div>
                

@@ -1,7 +1,6 @@
 import logo from '../assets/images/logo.png';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-
 import React, { useState, useEffect } from 'react';
 import { firestore, auth } from '../configuration/firebase'; // Import your Firestore instance and auth
 import { Navigate } from 'react-router-dom';

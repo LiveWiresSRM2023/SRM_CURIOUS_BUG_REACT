@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import Logo from "../assets/images/logo.png"
 import logo from "../assets/images/logo.png"
 import notif from '../assets/icons/navpronot.png'
@@ -7,11 +7,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown , faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import pic from "../assets/images/pfp.jpg"
 import { useActionData, useNavigate } from 'react-router-dom'
+import { firestore,auth } from "../configuration/firebase";
 
 const Navbar = () => {
-    
-    const navigate=useNavigate();
+  const [photoURL, setPhotoUrl] = useState("");
+  const navigate = useNavigate();
 
+    useEffect(() => {
+        const user = auth.currentUser;
+        if (user) {
+            setPhotoUrl(user.photoURL);
+        }
+    }, []);
   return (
 
 <div className="w-[100%] bg-white h-[65px] flex items-center justify-around ">
@@ -24,7 +31,7 @@ const Navbar = () => {
       <img src={notif} alt="" className="h-[25px] w-[25px]"/>
       <img src={message} alt="" className="h-[30px] w-[30px]" />
       <div  onClick={()=>{  navigate("/profile")}} className="flex items-center gap-2">
-      <img src={pic} alt=""  className="h-[30px] w-[30px] rounded-[50%] object-cover" />
+      <img src={photoURL} alt=""  className="h-[30px] w-[30px] rounded-[50%] object-cover" />
       <FontAwesomeIcon icon={faChevronDown} />
       </div>
    </div>
