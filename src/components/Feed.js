@@ -3,9 +3,6 @@ import Img from '../assets/images/landing_img.png';
 import Profile from '../assets/images/logo.png';
 import { TECarousel, TECarouselItem } from "tw-elements-react";
 
-
-
-
 const Feed = () => {
   return (
     <div>
