@@ -1,9 +1,12 @@
-import React from 'react'
+import React , {useState,useEffect} from 'react'
 import Img from '../assets/images/landing_img.png';
 import Profile from '../assets/images/logo.png';
 import { TECarousel, TECarouselItem } from "tw-elements-react";
+import { firestore,auth } from "../configuration/firebase";
+
 
 const Feed = () => {
+
   return (
     <div>
 

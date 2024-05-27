@@ -46,51 +46,92 @@ function Youknow() {
    )
    
 }
+// const Profile = () => {
+
+
+//     const [userData, setUserData] = useState(null);
+//     const [loading, setLoading] = useState(true);
+//     const [error, setError] = useState(null);
+//     const [userName,setUserName] =useState("");
+//     const [photoURL,setPhotoUrl]=useState("");
+//     const [userEmail,setUserEmail]=useState("");
+
+
+//     useEffect(() => {
+//       const fetchData = async () => {
+//           try {
+//                const user = auth.currentUser;
+//                // Get the current user
+//             //   if (user) {
+//             //       // const userId = user.uid;
+//                   setUserName(user.displayName)
+//                   setPhotoUrl(user.photoURL)
+//                   setUserEmail(user.email)// Get the user ID
+//                   const userRef = await firestore.collection("users").doc("123").get(); // Use userId as the document ID
+//                   if (userRef.exists) {
+//                       setUserData(userRef.data());
+//                   } else {
+//                       setError("Document does not exist");
+//                   }
+//             //   } else {
+//             //       setError("User is not authenticated");
+//             //   }
+//           } catch (error) {
+//               console.error("Error fetching document:", error);
+//               setError("Error fetching document");
+//           } finally {
+//               setLoading(false);
+//           }
+//       };
+
+//       fetchData();
+//   }, []);
+
+//   if (loading) return <p>Loading...</p>;
+//   if (error) return <p>Error: {error}</p>;
+
+
+
+
 const Profile = () => {
-
-
-    const  [userData, setUserData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-    const [userName,setUserName] =useState("");
-    const [photoURL,setPhotoUrl]=useState("");
-    const [userEmail,setUserEmail]=useState("");
-
-
-
-    useEffect(() => {
-      const fetchData = async () => {
-          try {
-              const user = auth.currentUser; // Get the current user
-              if (user) {
-                  const userId = user.uid;
-                  setUserName(user.displayName)
-                  setPhotoUrl(user.photoURL)
-                  setUserEmail(user.email)// Get the user ID
-                  const userRef = await firestore.collection("profile").doc(userId).get(); // Use userId as the document ID
-                  if (userRef.exists) {
-                      setUserData(userRef.data());
-                  } else {
-                      setError("Document does not exist");
-                  }
-              } else {
-                  setError("User is not authenticated");
-              }
-          } catch (error) {
-              console.error("Error fetching document:", error);
-              setError("Error fetching document");
-          } finally {
-              setLoading(false);
-          }
-      };
-
-      fetchData();
-  }, []);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
-
-
+   const [userData, setUserData] = useState(null);
+   const [loading, setLoading] = useState(true);
+   const [error, setError] = useState(null);
+   const [userName, setUserName] = useState("");
+   const [photoURL, setPhotoUrl] = useState("");
+   const [userEmail, setUserEmail] = useState("");
+ 
+   useEffect(() => {
+     const fetchdata = auth.onAuthStateChanged(async (user) => {
+       if (user) {
+         setUserName(user.displayName);
+         setPhotoUrl(user.photoURL);
+         setUserEmail(user.email);
+         try {
+           const userRef = await firestore.collection("users").doc("123").get(); // Use userId as the document ID
+           if (userRef.exists) {
+             setUserData(userRef.data());
+           } else {
+             setError("Document does not exist");
+           }
+         } catch (error) {
+           console.error("Error fetching document:", error);
+           setError("Error fetching document");
+         } finally {
+           setLoading(false);
+         }
+       } else {
+         setError("User is not authenticated");
+         setLoading(false);
+       }
+     });
+ 
+     return () => fetchdata();
+   }, []);
+ 
+   if (loading) return <p>Loading...</p>;
+   if (error) return <p>Error: {error}</p>;
+ 
 
 
  return(

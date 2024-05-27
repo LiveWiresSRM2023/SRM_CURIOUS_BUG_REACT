@@ -10,7 +10,6 @@ import { onAuthStateChanged } from 'firebase/auth';
 
 const Login = () => {
 
-
   const [currentUser, setCurrentUser] = useState(null);
   const [firstName, setFirstName] = useState("");
   const [department, setDepartment] = useState("");
@@ -18,6 +17,8 @@ const Login = () => {
   const [college, setCollege] = useState("");
   const [position, setPosition] = useState("");
   const [redirect, setRedirect] = useState(false); // State to control redirection
+
+
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -39,7 +40,7 @@ const Login = () => {
 
     try {
       // Add item to Firebase collection with UID as document ID
-      await firestore.collection("users").doc(currentUser.uid).set({
+      await firestore.collection("profile").doc(currentUser.uid).set({
         first_name: firstName,
         last_name: lastName,
         department: department,
@@ -127,3 +128,4 @@ const Login = () => {
 
 
 export default Login
+

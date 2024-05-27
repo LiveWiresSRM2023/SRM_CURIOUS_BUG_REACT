@@ -10,15 +10,20 @@ import { useActionData, useNavigate } from 'react-router-dom'
 import { firestore,auth } from "../configuration/firebase";
 
 const Navbar = () => {
-  const [photoURL, setPhotoUrl] = useState("");
+  const [photoURL, setPhotoUrl] = useState('');
   const navigate = useNavigate();
 
-    useEffect(() => {
-        const user = auth.currentUser;
-        if (user) {
-            setPhotoUrl(user.photoURL);
-        }
-    }, []);
+  useEffect(() => {
+    const fetchdata = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setPhotoUrl(user.photoURL);
+      } else {
+        setPhotoUrl('');
+      }
+    });
+
+    return () => fetchdata();
+  }, []);
   return (
 
 <div className="w-[100%] bg-white h-[65px] flex items-center justify-around ">
@@ -81,3 +86,6 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
