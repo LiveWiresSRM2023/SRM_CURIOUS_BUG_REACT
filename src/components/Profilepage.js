@@ -15,6 +15,7 @@ import Post from "../components/Post"
 
 
 function Activity() {
+  
    return(
    
      
@@ -48,9 +49,10 @@ function Youknow() {
    
 }
 const Profile = () => {
+   const [OpenPost , setOpenPost] = useState(false)
  return(
    <>
-   <Post/>
+   {OpenPost && <Post onClose = {() => setOpenPost(false)} />}
    
    <div className="w-[100%] bg-white h-[65px] flex items-center justify-around ">
       <img src={logo} alt="" className="h-[50px] w-[100px]" />
@@ -58,7 +60,7 @@ const Profile = () => {
       <FontAwesomeIcon icon={faMagnifyingGlass} />
       <input type="text" className="w-[600px] h-[40px] bg-[#F4F4F4] pl-[5px] focus:border-none focus:outline-none" placeholder="Search Curious Bees"/>
       </div>
-      <button className="bg-[#DE9A3A] rounded-[30px] w-[90px] h-[35px] text-[13px]">Create +</button>
+      <button onClick={() => setOpenPost(true)} className="bg-[#DE9A3A] rounded-[30px] w-[90px] h-[35px] text-[13px]">Create +</button>
       <img src={notif} alt="" className="h-[25px] w-[25px]"/>
       <img src={message} alt="" className="h-[30px] w-[30px]" />
       <div className="flex items-center gap-2">

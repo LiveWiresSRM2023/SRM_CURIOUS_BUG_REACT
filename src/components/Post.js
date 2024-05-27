@@ -1,21 +1,21 @@
 import React from "react";
 import pic from "../assets/images/pfp.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faXmark,faCaretDown,faClock } from '@fortawesome/free-solid-svg-icons'
 
 
-function Post() {
+function Post({onClose}) {
     return(
         <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60">
            
             <div className="bg-white h-[650px] w-[800px] rounded-lg flex flex-col justify-center ">
-            <div className="text-right pr-[50px] pb-10px">
+            <div onClick={onClose} className="text-right pr-[50px] pb-10px">
                 <FontAwesomeIcon icon={faXmark} size="xl"/>
             </div>
             <div className="flex items-center gap-2 pl-[50px] pb-[30px]">
                 <img src={pic} alt="" className="h-[40px] w-[40px] rounded-[50%] object-cover" />
                 <div>
-                    <h3 className="font-semibold text-[14px] "> Seyadu Raja K</h3>
+                    <h3 className="font-semibold text-[14px] "> Seyadu Raja K <span className="pl-1"> <FontAwesomeIcon icon={faCaretDown}/> </span> </h3>
                     <h5 className="font-semibold text-[10px]">React Developer</h5>
                 </div>
             </div>
