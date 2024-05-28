@@ -72,19 +72,19 @@ const Profile = () => {
      
         <div className="w-[73%] flex flex-col items-center">
            <div className="w-[95%]  bg-white m-5 rounded-lg">
-            <div className="">
-               <img src={cover} alt="" className="p-4 " />
-               <div className="mt-[-85px] ml-[30px] ">
-                   <img src={pic} alt="" className="h-[130px] w-[130px] rounded-[50%] object-cover  " />
+            <div className="flex ">
+              
+               <div className=" flex flex-col items-center ">
+                   <img src={pic} alt="" className="h-[180px] w-[180px] rounded-[50%] object-cover  " />
+                   <h1 className="font-bold text-[25px]">Seyadu Raja K </h1> 
+                   <h3 className="text-[15px] font-normal">Chennai</h3>
                </div>
-               <div className="flex items-center ">
-               <div className="pt-3 pb-3 pl-4 ">
-                     <h1 className="font-bold text-[25px]">Seyadu Raja K<span className="text-[15px] font-normal"> @raja_seyadu</span> </h1> 
-                     <h2 className="font-bold text-[17px]">React Developer</h2>
-                     <h3 className="text-[15px] font-normal">Chennai,Tamilnadu,India</h3>
+             
+               <div className=" ">
+                     
                </div>
                
-               <div className="flex items-center w-[70%] justify-between ">
+               {/* <div className="flex items-center w-[70%] justify-between ">
                   <div className="flex flex-col items-center pt-3 pl-12">
 
                   <div className="pb-3">
@@ -105,10 +105,9 @@ const Profile = () => {
                      </button>
                   </div>
                
-                  </div>
+                  </div> */}
 
 
-               </div>
                
             </div>
            </div>
