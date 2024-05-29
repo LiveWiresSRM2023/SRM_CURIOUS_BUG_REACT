@@ -6,7 +6,7 @@ import { faXmark,faCaretDown,faClock } from '@fortawesome/free-solid-svg-icons'
 
 function Post({onClose}) {
     return(
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60">
+        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60 z-[1]">
            
             <div className="bg-white h-[650px] w-[800px] rounded-lg flex flex-col justify-center ">
             <div onClick={onClose} className="text-right pr-[50px] pb-10px">
