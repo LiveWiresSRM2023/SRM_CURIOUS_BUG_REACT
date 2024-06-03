@@ -162,7 +162,7 @@
 
 
 
-
+import { firestore,auth } from "../configuration/firebase";
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -171,9 +171,18 @@ import logo from '../assets/images/logo.png';
 import notif from '../assets/icons/navpronot.png';
 import message from '../assets/icons/navpromes.png';
 
+
+
+
 const Navbar = () => {
   const [photoURL, setPhotoUrl] = useState('');
   const navigate = useNavigate();
+
+
+
+  const openCreatePost = () => {
+    navigate('/post');
+  };
 
   useEffect(() => {
     const fetchdata = auth.onAuthStateChanged((user) => {
@@ -202,7 +211,7 @@ const Navbar = () => {
           placeholder="Search Curious Bees" 
         />
       </div>
-      <button className="bg-yellow-500 rounded-full w-24 h-9 text-sm">
+      <button className="bg-yellow-500 rounded-full w-24 h-9 text-sm" onClick={openCreatePost}>
         Create +
       </button>
       <img 

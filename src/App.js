@@ -4,6 +4,7 @@ import Login from './components/Login.js';
 import Signin from './components/Signin.js';
 import Home from './components/Home.js';
 import Profile from "./components/Profilepage.js";
+import Post from "./components/post.js";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/signin' element={<Signin />} />
            <Route path='/Home' element={<Home/>} />
            <Route exact path='/profile' Component={Profile} />
+           <Route path="/post" element={<Post/>}/>
 
 
         </Routes>
