@@ -177,7 +177,7 @@ import message from '../assets/icons/navpromes.png';
 const Navbar = () => {
   const [photoURL, setPhotoUrl] = useState('');
   const navigate = useNavigate();
-
+  
 
 
   const openCreatePost = () => {
