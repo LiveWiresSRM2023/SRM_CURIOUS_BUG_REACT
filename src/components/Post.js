@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import pic from "../assets/images/pfp.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark,faCaretDown,faClock ,faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faXmark,faPlus } from '@fortawesome/free-solid-svg-icons'
 
 
 function Post({onClose}) {
