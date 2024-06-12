@@ -1,7 +1,7 @@
 
 // Post.js
-import React, { useState } from "react";
-import { firestore, storage } from "../configuration/firebase"; // Adjust the path as necessary
+import React, { useState,useEffect } from "react";
+import { firestore,auth, storage } from "../configuration/firebase"; // Adjust the path as necessary
 import { collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -58,7 +58,10 @@ function Post({ onClose }) {
         collaborators: Arrcoll,
         collaborate: Isselected,
         media: fileURL,
-        timestamp
+        timestamp,
+        userName: userName,
+        photoUrl: photoUrl
+
       });
 
       alert("Post added successfully!");
@@ -68,6 +71,36 @@ function Post({ onClose }) {
     }
     navigate('/home');
   };
+
+
+  const [userName,setUserName] =useState("")
+  const [photoUrl,setPhotoUrl] =useState("")
+
+
+
+  useEffect(() => {
+    const fetchdata = auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        setUserName(user.displayName);
+        setPhotoUrl(user.photoURL);
+       //  setUserEmail(user.email)
+       }
+    });
+ 
+    return () => fetchdata();
+  }, []);
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60 z-[1] ">

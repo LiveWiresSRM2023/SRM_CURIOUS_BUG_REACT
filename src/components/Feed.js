@@ -1,17 +1,9 @@
 
-
-
-
-
-
-
-
-
 import React , {useState,useEffect} from 'react'
 import Img from '../assets/images/landing_img.png';
 import Profile from '../assets/images/logo.png';
 import { TECarousel, TECarouselItem } from "tw-elements-react";
-import { firestore,auth } from "../configuration/firebase";
+import { firestore } from "../configuration/firebase";
 
 
 
@@ -254,10 +246,10 @@ const Feed = () => {
                     <div key={post.id} className='container p-5 mt-1 border rounded-lg'>
                         <div className='flex items-center gap-4 justify-between'>
                             <div className='flex gap-5 items-center'>
-                                <img src={Profile} className='w-14 h-14 rounded-full border-2 border-yellow-400' alt='Profile' />
+                                <img src={post.photoUrl} className='w-14 h-14 rounded-full border-2 border-yellow-400' alt='Profile' />
                                 <div className='mt-5'>
                                     <div className='flex gap-2 w-full items-center'>
-                                        <p className='text-xl font-bold'>Devan S</p>
+                                        <p className='text-xl font-bold'>{post.userName}</p>
                                         <p className='text-sm text-slate-500'>52 D</p>
                                     </div>
                                     <div>
@@ -376,7 +368,7 @@ const Feed = () => {
                         ongoing
                     </button>
                 </div>
-                <div className='ml-3 font-medium text-slate-500 ml-6'>
+                <div className='font-medium text-slate-500 ml-6'>
                     <p>Venue : <span>SRMIST</span></p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>

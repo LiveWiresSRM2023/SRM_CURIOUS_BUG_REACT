@@ -285,6 +285,7 @@ import { faChevronDown , faMagnifyingGlass } from '@fortawesome/free-solid-svg-i
 import { useState,useEffect } from "react";
 import Post from "../components/post"
 import { firestore,auth } from "../configuration/firebase";
+import Navbar from "./Navbar";
 
 
 
@@ -346,27 +347,23 @@ const Profile = () => {
    const [error, setError] = useState(null);
    const [userName, setUserName] = useState("");
    const [photoURL, setPhotoUrl] = useState("");
-   const [userEmail, setUserEmail] = useState("");
+   // const [userEmail, setUserEmail] = useState("");
 
 
    const [Isshow, setIsshow] = useState(false);
-   const [OpenPost , setOpenPost] = useState(false)
-   const [Colour , setColour] = useState(false)
+   // const [OpenPost , setOpenPost] = useState(false)
+   // const [Colour , setColour] = useState(false)
 
-   const colourchange = () => {
-      if (window.scrollY >= 5 ) {
-        setColour(true)
-      }
-      else {
-        setColour(false)
-      }
-   }
+//    const colourchange = () => {
+//       if (window.scrollY >= 5 ) {
+//         setColour(true)
+//       }
+//       else {
+//         setColour(false)
+//       }
+//    }
 
-window.addEventListener('scroll', colourchange)
-
-
-
-
+// window.addEventListener('scroll', colourchange)
 
 
 useEffect(() => {
@@ -374,7 +371,7 @@ useEffect(() => {
      if (user) {
        setUserName(user.displayName);
        setPhotoUrl(user.photoURL);
-       setUserEmail(user.email);
+      //  setUserEmail(user.email);
        try {
          const userRef = await firestore.collection("users").doc("123").get(); // Use userId as the document ID
          if (userRef.exists) {
@@ -403,34 +400,9 @@ useEffect(() => {
 
 
  return(
-
-   <div className="pt-[65px]">
-   {OpenPost && <Post onClose = {() => setOpenPost(false)} />}
-   
-   <div className= {`w-[100%] bg-white h-[65px] flex items-center justify-between fixed top-0 ${Colour? "bg-sky-50" : "bg-white"}`}>
-      <div className="pl-4">
-      <img src={logo} alt="" className="h-[50px] w-[100px]" />
-      </div>
-      <div className="bg-[#F4F4F4] pl-[10px] pr-[15px]  ">
-      <FontAwesomeIcon icon={faMagnifyingGlass} />
-      <input type="text" className="w-[620px] h-[40px] bg-[#F4F4F4] pl-[5px] focus:border-none focus:outline-none" placeholder="Search "/>
-      </div>
-      <div className="flex items-center gap-4 pr-4 ">
-         <button onClick={() => setOpenPost(true)} className="bg-black text-white font-bold rounded-[30px] w-[100px] h-[35px] text-[15px]">Create +</button>
-         <img src={notif} alt="" className="h-[25px] w-[25px]"/>
-         <img src={message} alt="" className="h-[30px] w-[30px]" />
-         <div className="flex items-center gap-2">
-         <img src={pic} alt="" className="h-[30px] w-[30px] rounded-[50%] object-cover" />
-         <FontAwesomeIcon icon={faChevronDown} />
-         </div>
-      </div>
-   </div>
-
-   {/* end of the navbar */}
-
-
+   <div>
+          <Navbar/>
     <div className=' w-[100%] flex  bg-[#F4F4F4] ' >
-     
         <div className="w-[73%] flex flex-col items-center">
            <div className="w-[95%]  bg-white m-5 rounded-lg">
 
@@ -461,7 +433,7 @@ useEffect(() => {
 
                      <div className="flex gap-[5px]">
                         <h3 className="font-bold">Website:</h3>
-                        <a href="${userData.website}">{userData.website}</a>
+                        <h3>{userData.website}</h3>
                      </div>
 
                      <div className="flex  items-center gap-4 py-3.5">

@@ -1,17 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Feed from "./Feed"
-
 const Home = () => {
   return (
     
     <div>
-        <div>
-          <Navbar/>
-        </div>
-        <div>
-          <Feed/>
-        </div>
+      <Navbar/>
+      <div>
+      <Feed/>
+      </div>
+
     </div>
   
   )
