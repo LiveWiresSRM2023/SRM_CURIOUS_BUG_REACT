@@ -1,6 +1,5 @@
 import React from "react";
 import pic from "../assets/images/pfp.jpg"
-import cover from '../assets/images/Rectangle 14.png'
 import email from '../assets/icons/gmail.png'
 import github from '../assets/icons/github.png'
 import twitter from '../assets/icons/twitter.png'
