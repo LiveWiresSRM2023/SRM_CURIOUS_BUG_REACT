@@ -1,5 +1,5 @@
 
-import { firestore,auth } from "../configuration/firebase";
+import {auth } from "../configuration/firebase";
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,9 +18,9 @@ const Navbar = () => {
   
 
 
-  const openCreatePost = () => {
-    navigate('/post');
-  };
+  // const openCreatePost = () => {
+  //   navigate('/post');
+  // };
 
   useEffect(() => {
     const fetchdata = auth.onAuthStateChanged((user) => {
