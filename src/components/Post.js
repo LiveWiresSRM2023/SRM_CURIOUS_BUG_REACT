@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useRef} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark,faPlus } from '@fortawesome/free-solid-svg-icons'
 
@@ -8,6 +8,15 @@ function Post({onClose}) {
     const [Isselected , setIsselected] = useState(false)
     const [Arrcoll , setArrcoll] = useState([])
     const [Newarr , setNewarr] = useState("")
+
+    const modelRef = useRef();
+
+    const closeModal = (e) => {
+        if (modelRef.current === e.target){
+            onClose();
+        }
+    }
+
     const addcoll = (e) => {
          e.preventDefault()
          setArrcoll( t=> [...t, Newarr])
@@ -26,8 +35,25 @@ function Post({onClose}) {
         const updatedcoll = Arrcoll.filter((_,i) => i !== index);
         setArrcoll(updatedcoll)
     }
+
+     const [selectedimage , setselectedimage] = useState([])
+
+    const Onselectedfiles  = (e) => {
+        const selectedfiles = e.target.files;
+        const selectedfilesarray = Array.from(selectedfiles)
+        
+        const imagesarray = selectedfilesarray.map((file) => {
+            return URL.createObjectURL(file)
+        });
+        
+        
+        setselectedimage((previousimage) => previousimage.concat(imagesarray))
+        
+    }
+
+
     return(
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60 z-[1] ">
+        <div ref = {modelRef} onClick={closeModal} className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60 z-[1] ">
            
             <div className="bg-white h-[680px] w-[820px] rounded-[20px] flex flex-col items-center overflow-auto   ">
             {/* <div onClick={onClose} className="text-right pr-[50px] pb-10px">
@@ -46,8 +72,29 @@ function Post({onClose}) {
                     
                     <div className="flex flex-col w-[700px] items-baseline " >
                        <h1 className="text-[18px] font-bold pb-5">Media</h1>
-                       <label htmlFor="file" className="border-solid border-[2px] border-gray-400 bg-gray-200 rounded-[20px] p-[40px] "><FontAwesomeIcon icon={faPlus} style={{color: "#DE9A4A",}}/></label>
-                       <input type="file" id="file"  className="hidden "/>
+                       <div className="flex ">
+                      
+                        <div className="flex">
+                    
+                            {selectedimage && 
+                            selectedimage.map((image,index) => {
+                            return(
+
+                            
+                                <div key={index}>
+                                   <img src={image} alt="" className="h-[100px] w-[100px] rounded-[20px] ml-[10px] mr-[10px]" />
+                               </div>
+                        
+                            )
+                                
+                            })
+                            }
+
+                        
+                        </div>
+                       <label htmlFor="file" className="border-solid border-[2px] border-gray-400 bg-gray-200 rounded-[20px] h-[100px] w-[100px] flex justify-center items-center "><FontAwesomeIcon icon={faPlus} style={{color: "#DE9A4A",}}/></label>
+                       <input type="file" id="file" multiple  className="hidden" onChange={Onselectedfiles}/>
+                       </div>
                     </div>
 
                     <div className="flex flex-col w-[700px] items-baseline ">
