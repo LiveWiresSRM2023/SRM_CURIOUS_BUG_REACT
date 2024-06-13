@@ -275,15 +275,15 @@ import email from '../assets/icons/gmail.png'
 import github from '../assets/icons/github.png'
 import twitter from '../assets/icons/twitter.png'
 import actimg from '../assets/images/Techutsav Certificate  3.png'
-import logo from "../assets/images/logo.png"
-import notif from '../assets/icons/navpronot.png'
-import message from '../assets/icons/navpromes.png'
+// import logo from "../assets/images/logo.png"
+// import notif from '../assets/icons/navpronot.png'
+// import message from '../assets/icons/navpromes.png'
 import googlesc from "../assets/images/googlescholar.png"
 import researchg from '../assets/images/research gate.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown , faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faChevronDown , faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { useState,useEffect } from "react";
-import Post from "../components/post"
+// import Post from "../components/post"
 import { firestore,auth } from "../configuration/firebase";
 import Navbar from "./Navbar";
 
