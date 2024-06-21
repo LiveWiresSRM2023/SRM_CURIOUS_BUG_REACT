@@ -104,7 +104,7 @@ function Post({ onClose }) {
 
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60 z-[1] ">
-      <div className="bg-white h-[680px] w-[820px] rounded-[20px] flex flex-col items-center overflow-auto">
+      <div className="bg-white h-[680px] w-[820px] rounded-[20px] flex flex-col items-center overflow-auto ">
         <form onSubmit={handleSubmit} className="flex flex-col items-center gap-[20px] pt-10 pb-10">
           <div className="flex flex-col">
             <label htmlFor="Title" className="text-[18px] font-bold pb-5"> Title </label>

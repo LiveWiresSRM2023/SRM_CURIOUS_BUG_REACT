@@ -7,6 +7,7 @@ import { firestore } from "../configuration/firebase";
 
 
 
+
 const Feed = () => {
 
     const [posts, setPosts] = useState([]);
@@ -34,7 +35,9 @@ const Feed = () => {
 
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
-      <div className='flex w-screen fixed'>
+    
+
+      <div className='flex w-screen fixed z-[-1]'>
 
         <div className='w-1/4 h-full p-1'>
 
