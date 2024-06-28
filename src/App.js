@@ -18,8 +18,6 @@ const App = () => {
            <Route path='/Home' element={<Home/>} />
            <Route exact path='/profile' Component={Profile} />
            <Route path="/post" element={<Post/>}/>
-
-
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

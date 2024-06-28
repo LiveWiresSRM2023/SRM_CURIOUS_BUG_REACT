@@ -286,6 +286,8 @@ import { useState,useEffect } from "react";
 // import Post from "../components/post"
 import { firestore,auth } from "../configuration/firebase";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
+import Post from "./post";
 
 
 
@@ -295,8 +297,6 @@ function Activity() {
   const [Isshow, setIsshow] = useState(false);
  
    return(
-   
-     
    
       <div className="pt-3">
          <h3 className="font-semibold text-[14px] pb-3">Seyadu Raja K <span className=" font-normal text-[12px]">posted this .</span> <span className=" font-normal text-[12px]">3w</span> </h3>
@@ -338,9 +338,9 @@ function Youknow() {
 
 const Profile = () => {
 
+   const navigate= useNavigate()
 
-
-
+   const [OpenPost , setOpenPost] = useState(false)
 
    const [userData, setUserData] = useState(null);
    const [loading, setLoading] = useState(true);
@@ -403,6 +403,7 @@ useEffect(() => {
    <div>
           <Navbar/>
     <div className=' w-[100%] flex  bg-[#F4F4F4] ' >
+    {OpenPost && <Post onClose = {() => setOpenPost(false)} />}
         <div className="w-[73%] flex flex-col items-center">
            <div className="w-[95%]  bg-white m-5 rounded-lg">
 
@@ -472,7 +473,7 @@ useEffect(() => {
        <div className="w-[95%]  bg-white m-5 rounded-lg mt-0 p-4">
          <div className="flex items-center justify-between">
             <h1 className="font-bold text-[20px] pb-2">Activity</h1>
-            <button className="bg-black text-white font-bold rounded-[30px] w-[100px] h-[35px] text-[15px]">
+            <button onClick={() => setOpenPost(true)} className="bg-black text-white font-bold rounded-[30px] w-[100px] h-[35px] text-[15px]">
                Create +
             </button>
          </div>
