@@ -7,7 +7,7 @@ import { faChevronDown, faMagnifyingGlass } from '@fortawesome/free-solid-svg-ic
 import logo from '../assets/images/logo.png';
 import notif from '../assets/icons/navpronot.png';
 import message from '../assets/icons/navpromes.png';
-import Post from "./post";
+import Post from "./Post";
 
 
 

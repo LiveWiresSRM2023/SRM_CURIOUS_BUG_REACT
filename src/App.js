@@ -4,7 +4,7 @@ import Login from './components/Login.js';
 import Signin from './components/Signin.js';
 import Home from './components/Home.js';
 import Profile from "./components/Profilepage.js";
-import Post from "./components/post.js";
+import Post from "./components/Post.js";
 
 const App = () => {
   return (
