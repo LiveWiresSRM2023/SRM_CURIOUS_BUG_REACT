@@ -16,18 +16,16 @@ const Feed = () => {
         <div className='container border rounded-lg'>
             <div className='flex items-center m-5 p-5 rounded-md font-bold bg-slate-600 text-yellow-500 gap-2'>
                 <i className="fa-solid fa-briefcase w-6 h-6 mr-2"></i>
-                <span className="flex items-center">Business</span> {/* Use flex to align icon and text vertically */}
+                Business
             </div>
             <div className='flex items-center m-5 p-5 rounded-md font-bold gap-2'>
                 <i className="fa-solid fa-flask w-6 h-6 mr-2"></i>
-                <span className="flex items-center">Science</span>
+                Science
             </div>
             <div className='flex items-center m-5 p-5 rounded-md font-bold gap-2'>
                 <i className="fa-solid fa-gavel w-6 h-6 mr-2"></i>
-                <span className="flex items-center">Law</span>
-
-</div>
-
+                Law
+            </div>
 </div>
 
 

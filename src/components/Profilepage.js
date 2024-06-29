@@ -394,8 +394,26 @@ useEffect(() => {
    return () => fetchdata();
  }, []);
 
- if (loading) return <p>Loading...</p>;
- if (error) return <p>Error: {error}</p>;
+ if (loading) {
+   return (
+     <div className="flex items-center justify-center h-screen">
+       <div className="flex space-x-1">
+         <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
+         <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
+         <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
+       </div>
+       <p className="ml-2 text-gray-900">Loading...</p>
+     </div>
+   );
+ }
+
+ if (error) {
+   return (
+     <div>
+       <p>Error: {error}</p>
+     </div>
+   );
+ }
 
 
 
