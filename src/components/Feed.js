@@ -132,7 +132,9 @@ const Feed = () => {
                 <div className='container p-5 mt-1 border rounded-lg'>
                     <div className='flex items-center gap-4 justify-between'>
                         <div className='flex gap-5 items-center'>
+
                         <img src={Profile} className='w-14 h-14 rounded-full border-2 border-yellow-400' alt='...'></img>
+
                             <div className='mt-5'>
                                 <div className='flex gap-2 w-full items-center'>
                                     <p className='text-xl font-bold'>Roshan SK</p><p className='text-sm text-slate-500'>52 D</p>
@@ -207,6 +209,7 @@ const Feed = () => {
                 <div className='container p-5 mt-1 border rounded-lg'>
                     <div className='flex items-center gap-4 justify-between'>
                         <div className='flex gap-5 items-center'>
+
                         <img src={Profile} className='w-14 h-14 rounded-full border-2 border-yellow-400' alt='...'></img>
                             <div className='mt-5'>
                                 <div className='flex gap-2 w-full items-center'>
@@ -280,6 +283,7 @@ const Feed = () => {
                 <div className='container p-5 mt-1 border rounded-lg'>
                     <div className='flex items-center gap-4 justify-between'>
                         <div className='flex gap-5 items-center'>
+
                         <img src={Profile} className='w-14 h-14 rounded-full border-2 border-yellow-400' alt='...'></img>
                             <div className='mt-5'>
                                 <div className='flex gap-2 w-full items-center'>

@@ -5,7 +5,6 @@ import Signin from './components/Signin.js';
 import Home from './components/Home.js';
 import Profile from "./components/Profilepage.js";
 
-
 const App = () => {
   return (
     <div className="App">
@@ -18,6 +17,7 @@ const App = () => {
           <Route path='/signin' element={<Signin />} />
           <Route path='/Home' element={<Home/>} />
           <Route exact path='/profile' Component={Profile} />
+
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
