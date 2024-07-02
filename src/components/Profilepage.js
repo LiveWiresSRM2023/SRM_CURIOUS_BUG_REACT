@@ -337,7 +337,7 @@ function Youknow() {
 
 const Profile = () => {
 
-   const navigate= useNavigate()
+   
 
    const [OpenPost , setOpenPost] = useState(false)
 
