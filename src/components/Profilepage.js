@@ -397,11 +397,11 @@ useEffect(() => {
    return (
      <div className="flex items-center justify-center h-screen">
        <div className="flex space-x-1">
-         <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
-         <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
-         <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
+         <div className="w-3 h-3 bg-yellow-900 rounded-full"></div>
+         <div className="w-3 h-3 bg-yellow-900 rounded-full"></div>
+         <div className="w-3 h-3 bg-yellow-900 rounded-full"></div>
        </div>
-       <p className="ml-2 text-gray-900">Loading...</p>
+       <p className="ml-2 text-yellow-900">Loading...</p>
      </div>
    );
  }
@@ -419,7 +419,7 @@ useEffect(() => {
  return(
    <div>
           <Navbar/>
-    <div className=' w-[100%] flex  bg-[#F4F4F4] ' >
+    <div className=' w-[100%] flex  bg-[#d7d5d5] ' >
     {OpenPost && <Post onClose = {() => setOpenPost(false)} />}
         <div className="w-[73%] flex flex-col items-center">
            <div className="w-[95%]  bg-white m-5 rounded-lg">
