@@ -45,7 +45,7 @@ window.addEventListener('scroll', colourchange)
   return (
 
    <div className="pt-[65px]">
-<div className= {`w-[100%] bg-white h-[65px] flex items-center justify-between fixed top-0 ${Colour? "bg-sky-50" : "bg-white"}`}>
+<div className= {`w-[100%] bg-white h-[50px] flex items-center justify-between fixed top-0 ${Colour? "bg-sky-50" : "bg-white"}`}>
 {OpenPost && <Post onClose = {() => setOpenPost(false)} />}
       <div className="pl-4" onClick={()=>{navigate("/home")}}>
       <img src={logo} alt="" className="h-[50px] w-[100px]" />
