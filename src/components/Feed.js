@@ -14,19 +14,19 @@ const Feed = () => {
     <div className='flex w-screen fixed'>
     <div className='w-1/4 h-full p-1'>
         <div className='container border rounded-lg'>
-        <div className='flex items-center m-5 p-5 rounded-md font-bold bg-slate-600 text-yellow-500 gap-2'>
-                <i className="fa-solid fa-briefcase w-6 h-6 mr-2"></i>
-                Business
+            <div className='flex items-center m-5 p-5 rounded-md font-bold bg-slate-600 text-yellow-500 gap-0 text-sm'>
+                <i className="fa-solid fa-briefcase w-6 h-3"></i>
+                <span className="ml-1">Business</span>
             </div>
-            <div className='flex items-center m-5 p-5 rounded-md font-bold gap-2'>
-                <i className="fa-solid fa-flask w-6 h-6 mr-2"></i>
-                Science
+            <div className='flex items-center m-5 p-5 rounded-md font-bold gap-0 text-sm'>
+                <i className="fa-solid fa-flask w-6 h-3"></i>
+                <span className="ml-1">Science</span>
             </div>
-            <div className='flex items-center m-5 p-5 rounded-md font-bold gap-2'>
-                <i className="fa-solid fa-gavel w-6 h-6 mr-2"></i>
-                Law
+            <div className='flex items-center m-5 p-5 rounded-md font-bold gap-0 text-sm'>
+                <i className="fa-solid fa-gavel w-6 h-3"></i>
+                <span className="ml-1">Law</span>
             </div>
-</div>
+    </div>
 
 
 
@@ -123,7 +123,7 @@ const Feed = () => {
             </div>
         </div>
 
-        <div className='border-yellow-300 w-3/5 h-screen pb-20 overflow-scroll scrollbar-hide'>
+        <div className='border-yellow-300 w-3/5 h-screen pb-20 overflow-scroll scrollbar'>
 
             <div className='pb-20'>
                 <div className='container p-5 mt-1 border rounded-lg'>
