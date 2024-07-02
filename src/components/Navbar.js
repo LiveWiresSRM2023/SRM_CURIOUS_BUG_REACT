@@ -50,10 +50,19 @@ window.addEventListener('scroll', colourchange)
       <div className="pl-4" onClick={()=>{navigate("/home")}}>
       <img src={logo} alt="" className="h-[50px] w-[100px]" />
       </div>
-      <div className="bg-[#F4F4F4] pl-[10px] pr-[15px]">
-      <FontAwesomeIcon icon={faMagnifyingGlass} />
-      <input type="text" className="w-[620px] h-[40px] bg-[#F4F4F4] pl-[5px] focus:border-none focus:outline-none" placeholder="Search "/>
-      </div>
+      <div className="mt-3 relative">
+    <FontAwesomeIcon icon={faMagnifyingGlass} className="absolute top-1/2 transform -translate-y-1/2 left-3 text-black" />
+    <input
+        type="text"
+        className="w-[620px] h-[35px] bg-[#d6d4d4] pl-[35px] pr-[5px] rounded text-black focus:border-black focus:outline-black"
+        placeholder="Search"
+        style={{ '::placeholder': { color: '#666' } }}
+    />
+</div>
+
+
+
+
       <div className="flex items-center gap-4 pr-4 ">
          <button onClick={() => setOpenPost(true)} className="bg-black text-white font-bold rounded-[30px] w-[100px] h-[35px] text-[15px]">Create +</button>
          <img src={notif} alt="" className="h-[25px] w-[25px]"/>
