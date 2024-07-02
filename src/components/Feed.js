@@ -14,15 +14,15 @@ const Feed = () => {
     <div className='flex w-screen fixed'>
     <div className='w-1/4 h-full p-1'>
         <div className='container border rounded-lg'>
-            <div className='flex items-center m-2 p-5 rounded-md font-medium bg-slate-600 text-yellow-500 gap-0 text-base'>
+            <div className='flex items-center m-2 p-5 rounded-md font-semibold bg-slate-600 text-yellow-500 gap-0 text-base'>
                 <i className="fa-solid fa-briefcase w-6 h-4"></i>
                 <span className="ml-1">Business</span>
             </div>
-            <div className='flex items-center m-2 p-5 rounded-md font-mdeium gap-0 text-base'>
+            <div className='flex items-center m-2 p-5 rounded-md font-semibold gap-0 text-base'>
                 <i className="fa-solid fa-flask w-6 h-4"></i>
                 <span className="ml-1">Science</span>
             </div>
-            <div className='flex items-center m-2 p-5 rounded-md font-medium gap-0 text-base'>
+            <div className='flex items-center m-2 p-5 rounded-md font-semibold gap-0 text-base'>
                 <i className="fa-solid fa-gavel w-6 h-4"></i>
                 <span className="ml-1">Law</span>
             </div>
