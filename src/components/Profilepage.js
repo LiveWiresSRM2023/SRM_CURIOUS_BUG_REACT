@@ -286,7 +286,6 @@ import { useState,useEffect } from "react";
 // import Post from "../components/post"
 import { firestore,auth } from "../configuration/firebase";
 import Navbar from "./Navbar";
-import { useNavigate } from "react-router-dom";
 import Post from "./Post";
 
 

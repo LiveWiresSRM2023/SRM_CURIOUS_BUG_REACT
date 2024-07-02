@@ -1,4 +1,3 @@
-
 import {auth } from "../configuration/firebase";
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -9,15 +8,10 @@ import notif from '../assets/icons/navpronot.png';
 import message from '../assets/icons/navpromes.png';
 import Post from "./Post";
 
-
-
-
 const Navbar = () => {
   const [photoURL, setPhotoUrl] = useState('');
   const navigate = useNavigate();
   
-
-
   // const openCreatePost = () => {
   //   navigate('/post');
   // };
@@ -33,8 +27,6 @@ const Navbar = () => {
 
     return () => fetchdata();
   }, []);
-
-
 
   const [OpenPost , setOpenPost] = useState(false)
   const [Colour , setColour] = useState(false)
