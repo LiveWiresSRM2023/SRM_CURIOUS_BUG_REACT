@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://srm-curious-bug.pages.dev/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <!--<base href="/">--><base href=".">
+
+  
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="three">
+  <link rel="apple-touch-icon" href="https://srm-curious-bug.pages.dev/icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://srm-curious-bug.pages.dev/favicon.png">
+
+  <title>SRM Curious Bees</title>
+  <link rel="manifest" href="https://srm-curious-bug.pages.dev/manifest.json">
+<style>@font-face {
+              font-family: 'Open Sans Regular';
+              font-style: normal;
+              font-weight: 400;
+              src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-regular.woff');
+          }</style><style>@font-face {
+              font-family: 'Open Sans Bold';
+              font-style: normal;
+              font-weight: 800;
+              src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/OpenSans-Bold.woff');
+          }</style><style>@font-face {
+              font-family: 'Open Sans ExtraBold';
+              font-style: normal;
+              font-weight: 800;
+              src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-800.woff');
+          }</style><script type="application/javascript" src="./postinteraction_files/main.dart.js.download"></script><meta flt-viewport="" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><script type="text/javascript" crossorigin="anonymous">            window.ff_trigger_firebase_core = async (callback) => {
+              console.debug("Initializing Firebase firebase_core");
+              callback(await import("https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"));
+            };
+          </script><script type="text/javascript" crossorigin="anonymous">            window.ff_trigger_firebase_firestore = async (callback) => {
+              console.debug("Initializing Firebase firebase_firestore");
+              callback(await import("https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"));
+            };
+          </script><script type="text/javascript" crossorigin="anonymous">            window.ff_trigger_firebase_auth = async (callback) => {
+              console.debug("Initializing Firebase firebase_auth");
+              callback(await import("https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"));
+            };
+          </script><script type="text/javascript" crossorigin="anonymous">            window.ff_trigger_firebase_storage = async (callback) => {
+              console.debug("Initializing Firebase firebase_storage");
+              callback(await import("https://www.gstatic.com/firebasejs/10.11.1/firebase-storage.js"));
+            };
+          </script><meta id="flutterweb-theme" name="theme-color" content="rgba(0,0,0,0)"></head>
+<body data-new-gr-c-s-check-loaded="14.1185.0" data-gr-ext-installed="" flt-embedding="full-page" flt-renderer="canvaskit (auto-selected)" flt-build-mode="release" spellcheck="false" style="position: fixed; inset: 0px; overflow: hidden; padding: 0px; margin: 0px; user-select: none; touch-action: none;"><flt-semantics-placeholder role="button" aria-live="polite" tabindex="0" aria-label="Enable accessibility" style="position: absolute; left: -1px; top: -1px; width: 1px; height: 1px;"></flt-semantics-placeholder>
+  <script src="./postinteraction_files/flutter_bootstrap.js.download" async=""></script>
+
+
+<flutter-view flt-view-id="0" tabindex="0" style="position: absolute; inset: 0px; width: 1494px; height: 799.333px;"><flt-glass-pane><template shadowrootmode="open"><flt-scene-host style="pointer-events: none;"><flt-canvas-container><canvas aria-hidden="true" width="2241" height="1198" style="position: absolute; width: 1494px; height: 798.667px;"></canvas></flt-canvas-container></flt-scene-host><flt-announcement-host></flt-announcement-host><style id="flt-internals-stylesheet"> flt-scene-host {  font: normal normal 14px sans-serif;} flt-semantics input[type=range] {  appearance: none;  -webkit-appearance: none;  width: 100%;  position: absolute;  border: none;  top: 0;  right: 0;  bottom: 0;  left: 0;} input::selection {  background-color: transparent;} textarea::selection {  background-color: transparent;} flt-semantics input, flt-semantics textarea, flt-semantics [contentEditable="true"] {  caret-color: transparent;} .flt-text-editing::placeholder {  opacity: 0;}:focus { outline: none;} .transparentTextEditing:-webkit-autofill, .transparentTextEditing:-webkit-autofill:hover, .transparentTextEditing:-webkit-autofill:focus, .transparentTextEditing:-webkit-autofill:active {  opacity: 0 !important;}</style></template></flt-glass-pane><flt-text-editing-host></flt-text-editing-host><flt-semantics-host style="position: absolute; transform-origin: 0px 0px 0px; transform: scale(0.666667);"></flt-semantics-host><style id="flt-text-editing-stylesheet">flutter-view flt-scene-host {  font: normal normal 14px sans-serif;}flutter-view flt-semantics input[type=range] {  appearance: none;  -webkit-appearance: none;  width: 100%;  position: absolute;  border: none;  top: 0;  right: 0;  bottom: 0;  left: 0;}flutter-view input::selection {  background-color: transparent;}flutter-view textarea::selection {  background-color: transparent;}flutter-view flt-semantics input,flutter-view flt-semantics textarea,flutter-view flt-semantics [contentEditable="true"] {  caret-color: transparent;}flutter-view .flt-text-editing::placeholder {  opacity: 0;}flutter-view:focus { outline: none;}flutter-view .transparentTextEditing:-webkit-autofill,flutter-view .transparentTextEditing:-webkit-autofill:hover,flutter-view .transparentTextEditing:-webkit-autofill:focus,flutter-view .transparentTextEditing:-webkit-autofill:active {  opacity: 0 !important;}</style></flutter-view></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
