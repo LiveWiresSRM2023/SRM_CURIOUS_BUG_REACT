@@ -211,21 +211,28 @@ const Feed = () => {
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
                             </p>
                         </div>
-                        <div className= 'container'>
-                            <TECarousel showControls showIndicators ride="carousel">
-                                <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-                                <TECarouselItem itemID={1} className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
-                                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg" className="block w-full rounded-2xl m-1"alt="..."/>
-                                </TECarouselItem>
-                                <TECarouselItem itemID={2} className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
-                                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg" className="block w-full rounded-2xl m-1" alt="..."/>
-                                </TECarouselItem>
-                                <TECarouselItem itemID={3} className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
-                                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg" className="block w-full rounded-2xl" alt="..."/>
-                                </TECarouselItem>
-                                </div>
-                            </TECarousel>
-                        </div>
+                        <div className='container'>
+    <TECarousel showControls showIndicators ride="carousel">
+      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <TECarouselItem itemID={1} className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
+          <Link to="/postinteraction">
+            <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg" className="block w-full rounded-2xl m-1" alt="..."/>
+          </Link>
+        </TECarouselItem>
+        <TECarouselItem itemID={2} className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
+          <Link to="/postinteraction">
+            <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg" className="block w-full rounded-2xl m-1" alt="..."/>
+          </Link>
+        </TECarouselItem>
+        <TECarouselItem itemID={3} className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
+          <Link to="/postinteraction">
+            <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg" className="block w-full rounded-2xl" alt="..."/>
+          </Link>
+        </TECarouselItem>
+      </div>
+    </TECarousel>
+  
+</div>
 
                         <div className='flex container p-3 m-5 justify-between'>
                             <div className='flex gap-2'>
@@ -279,21 +286,28 @@ const Feed = () => {
                             <h1 className='mb-3 text-2xl font-bold'>Intgeration of AI in WebApp</h1>
                         </div>
 
-                        <div className= 'container'>
-                            <TECarousel showControls showIndicators ride="carousel">
-                                <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-                                <TECarouselItem itemID={1} className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
-                                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg" className="block w-full rounded-2xl m-1"alt="..."/>
-                                </TECarouselItem>
-                                <TECarouselItem itemID={2} className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
-                                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg" className="block w-full rounded-2xl m-1" alt="..."/>
-                                </TECarouselItem>
-                                <TECarouselItem itemID={3} className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
-                                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg" className="block w-full rounded-2xl" alt="..."/>
-                                </TECarouselItem>
-                                </div>
-                            </TECarousel>
-                        </div>
+                        <div className='container'>
+    <TECarousel showControls showIndicators ride="carousel">
+      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <TECarouselItem itemID={1} className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
+          <Link to="/postinteraction">
+            <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg" className="block w-full rounded-2xl m-1" alt="..."/>
+          </Link>
+        </TECarouselItem>
+        <TECarouselItem itemID={2} className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
+          <Link to="/postinteraction">
+            <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg" className="block w-full rounded-2xl m-1" alt="..."/>
+          </Link>
+        </TECarouselItem>
+        <TECarouselItem itemID={3} className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
+          <Link to="/postinteraction">
+            <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg" className="block w-full rounded-2xl" alt="..."/>
+          </Link>
+        </TECarouselItem>
+      </div>
+    </TECarousel>
+  
+</div>
 
                         <div>
                             <p className='mb-2 text-justify text-lg'>
