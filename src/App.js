@@ -5,6 +5,7 @@ import Signin from './components/Signin.js';
 import Home from './components/Home.js';
 import Profile from "./components/Profilepage.js";
 import Post from "./components/Post.js";
+import PostInteraction from "./components/PostInteraction.js";
 
 const App = () => {
   return (

@@ -12,7 +12,7 @@ const Feed = () => {
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
     <div className='flex w-screen fixed'>
-    <div className='w-1/4 h-full p-1'>
+    <div className='w-1/4 h-full p-1 container overflow-scroll scrollbar'>
         <div className='container border rounded-lg'>
             <div className='flex items-center m-2 p-5 rounded-md font-semibold bg-slate-600 text-yellow-500 gap-0 text-base'>
                 <i className="fa-solid fa-briefcase w-6 h-4"></i>
@@ -32,7 +32,7 @@ const Feed = () => {
 
             <div className='container border mt-1 rounded-lg'>
                 <h1 className='m-5 font-bold'>
-                    Followed Hashtags
+                    <u>Followed Hashtags</u>
                 </h1>
 
                 <div className='container ml-4'>
@@ -49,16 +49,6 @@ const Feed = () => {
                     <div className='flex m-5 gap-2 items-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5" />
-                        </svg> User Experience
-                    </div>
-                    <div className='flex m-5 gap-2 items-center'>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5" />
-                        </svg> Python
-                    </div>
-                    <div className='flex m-5 gap-2 items-center'>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5" />
                         </svg> SRMIST
                     </div>  
                 </div>
@@ -66,54 +56,30 @@ const Feed = () => {
 
             <div className='container border rounded-lg mt-1 '>
                 <h1 className='m-5 font-bold'>
-                    Your Post
+                    <u>My Posts</u>
                 </h1>
-                <div className='h-56 overflow-scroll scrollbar-hide whitespace-nowrap'>
+                <div className='h-56 whitespace-nowrap'>
                 <div className='container ml-1'>
-                    <div className='flex m-2 gap-2 items-center border rounded-md p-2'>
+                    <div className='flex m-2 gap-2 items-center'>
                         <img src={Img} alt='' className='w-20 rounded-md' ></img>
                         <div>
                             <h1 className='font-bold'>
-                                Intgeration of AI in WebApp
+                                Headline
                             </h1>
                             <p className='text-slate-400 text-sm'>
-                                Empower the tech world with AI
+                                8,123 viewers
                             </p>
 
                         </div>
                     </div>
-                    <div className='flex m-2 gap-2 items-center border rounded-md p-2'>
+                    <div className='flex m-2 gap-2 items-center '>
                         <img src={Img} alt='' className='w-20 rounded-md' ></img>
                         <div>
                             <h1 className='font-bold'>
-                                Intgeration of AI in WebApp
+                                Headline
                             </h1>
                             <p className='text-slate-400 text-sm'>
-                                Empower the tech world with AI
-                            </p>
-
-                        </div>
-                    </div>
-                    <div className='flex m-2 gap-2 items-center border rounded-md p-2'>
-                        <img src={Img} alt='' className='w-20 rounded-md' ></img>
-                        <div>
-                            <h1 className='font-bold'>
-                                Intgeration of AI in WebApp
-                            </h1>
-                            <p className='text-slate-400 text-sm'>
-                                Empower the tech world with AI
-                            </p>
-
-                        </div>
-                    </div>
-                    <div className='flex m-2 gap-2 items-center border rounded-md p-2'>
-                        <img src={Img} alt='' className='w-20 rounded-md' ></img>
-                        <div>
-                            <h1 className='font-bold'>
-                                Intgeration of AI in WebApp
-                            </h1>
-                            <p className='text-slate-400 text-sm'>
-                                Empower the tech world with AI
+                                8,123 viewers
                             </p>
 
                         </div>
