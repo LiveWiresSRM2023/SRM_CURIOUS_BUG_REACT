@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Landing from "./components/Landing.js";
-import Login from './components/Login.js';
-import Signin from './components/Signin.js';
-import Home from './components/Home.js';
-import Profile from "./components/Profilepage.js";
-import Post from "./components/Post.js";
-import PostInteraction from "./components/PostInteraction.js";
+import Landing from "./components/Landing";
+import Login from './components/Login';
+import Signin from './components/Signin';
+import Home from './components/Home';
+import Profile from "./components/Profilepage";
+import Post from "./components/Post";
+import PostInteraction from "./components/PostInteraction";
 
 const App = () => {
   return (
@@ -16,14 +16,15 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/landing' element={<Landing />} />
           <Route path='/signin' element={<Signin />} />
-           <Route path='/Home' element={<Home/>} />
-           <Route exact path='/profile' Component={Profile} />
-           <Route path="/post" element={<Post/>}/>
-           <Route path="/postinteraction" Component={<PostInteraction/>}/>
+          <Route path='/home' element={<Home />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/post' element={<Post />} />
+          <Route path='/postinteraction' element={<PostInteraction />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
     </div>
-  )
+  );
 }
+
 export default App;
