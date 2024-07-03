@@ -2,8 +2,10 @@ import React from 'react'
 import Img from '../assets/images/landing_img.png';
 import Profile from '../assets/images/logo.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Link } from 'react-router-dom';
 
 import { TECarousel, TECarouselItem } from "tw-elements-react";
+
 
 const Feed = () => {
   return (

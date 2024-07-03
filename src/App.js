@@ -19,6 +19,7 @@ const App = () => {
            <Route path='/Home' element={<Home/>} />
            <Route exact path='/profile' Component={Profile} />
            <Route path="/post" element={<Post/>}/>
+           <Route path="/postinteraction" Component={<PostInteraction/>}/>
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
