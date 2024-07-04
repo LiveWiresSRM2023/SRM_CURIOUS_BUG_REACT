@@ -116,9 +116,20 @@ const Feed = () => {
                                         </svg> Posted on May-25-2024
                             </span>
                         </div>
-                    </div>
+                    </div>                 
 
-                    <div className="m-5">
+                        <div>
+                            <h1 className='mb-3 text-2xl font-bold'>Intgeration of AI in WebApp</h1>
+                        </div>
+                        <div>
+                            <p className='mb-2 text-justify text-lg'>
+                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
+                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
+                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
+                            </p>
+                     </div>
+
+                     <div className="m-5">
   <div className='container'>
     <TECarousel showControls showIndicators ride="carousel">
       <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
@@ -142,17 +153,6 @@ const Feed = () => {
   
 </div>
 
-                        <div>
-                            <h1 className='mb-3 text-2xl font-bold'>Intgeration of AI in WebApp</h1>
-                        </div>
-                        <div>
-                            <p className='mb-2 text-justify text-lg'>
-                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
-                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
-                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
-                            </p>
-                        </div>
-
                         <div className='flex container p-3 m-5 justify-between'>
                             <div className='flex gap-2'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-yellow-500">
@@ -286,6 +286,14 @@ const Feed = () => {
                             <h1 className='mb-3 text-2xl font-bold'>Intgeration of AI in WebApp</h1>
                         </div>
 
+                        <div>
+                            <p className='mb-2 text-justify text-lg'>
+                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
+                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
+                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
+                            </p>
+                        </div>
+
                         <div className='container'>
     <TECarousel showControls showIndicators ride="carousel">
       <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
@@ -308,14 +316,6 @@ const Feed = () => {
     </TECarousel>
   
 </div>
-
-                        <div>
-                            <p className='mb-2 text-justify text-lg'>
-                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
-                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
-                            Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
-                            </p>
-                        </div>
 
                         <div className='flex container p-3 m-5 justify-between'>
                             <div className='flex gap-2'>
