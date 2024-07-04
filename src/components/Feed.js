@@ -3,7 +3,7 @@ import Img from '../assets/images/landing_img.png';
 import Profile from '../assets/images/logo.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Link } from 'react-router-dom';
-
+import { useState } from 'react';
 import { TECarousel, TECarouselItem } from "tw-elements-react";
 
 
@@ -16,7 +16,7 @@ const Feed = () => {
     <div className='flex w-screen fixed'>
     <div className='w-1/4 h-full p-1 container overflow-scroll scrollbar'>
         <div className='container border rounded-lg'>
-            <div className='flex items-center m-2 p-5 rounded-md font-semibold bg-slate-600 text-yellow-500 gap-0 text-base'>
+            <div className='flex items-center m-2 p-5 rounded-md font-semibold gap-0 text-base'>
                 <i className="fa-solid fa-briefcase w-6 h-4"></i>
                 <span className="ml-1">Business</span>
             </div>
