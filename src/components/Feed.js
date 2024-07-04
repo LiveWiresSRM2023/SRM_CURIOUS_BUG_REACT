@@ -8,27 +8,37 @@ import { TECarousel, TECarouselItem } from "tw-elements-react";
 
 
 const Feed = () => {
+    const [selected, setSelected] = useState(null);
+
+    const handleSelect = (category) => {
+        setSelected(category);
+    };
+
   return (
     <div>
 
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
     <div className='flex w-screen fixed'>
-    <div className='w-1/4 h-full p-1 container overflow-scroll scrollbar'>
-        <div className='container border rounded-lg'>
-            <div className='flex items-center m-2 p-5 rounded-md font-semibold gap-0 text-base'>
-                <i className="fa-solid fa-briefcase w-6 h-4"></i>
-                <span className="ml-1">Business</span>
-            </div>
-            <div className='flex items-center m-2 p-5 rounded-md font-semibold gap-0 text-base'>
-                <i className="fa-solid fa-flask w-6 h-4"></i>
-                <span className="ml-1">Science</span>
-            </div>
-            <div className='flex items-center m-2 p-5 rounded-md font-semibold gap-0 text-base'>
-                <i className="fa-solid fa-gavel w-6 h-4"></i>
-                <span className="ml-1">Law</span>
-            </div>
-    </div>
+            <div className='w-1/4 h-full p-1 container overflow-scroll scrollbar'>
+                <div className='container border rounded-lg'>
+                    {[
+                        { name: 'Business', icon: 'fa-briefcase' },
+                        { name: 'Science', icon: 'fa-flask' },
+                        { name: 'Law', icon: 'fa-gavel' }
+                    ].map((item, index) => (
+                        <div
+                            key={index}
+                            className={`flex items-center h-12 m-2 p-5 rounded-md font-semibold gap-0 text-base cursor-pointer ${
+                                selected === item.name ? 'bg-gray-200 text-yellow-500' : ''
+                            }`}
+                            onClick={() => handleSelect(item.name)}
+                        >
+                            <i className={`fa-solid ${item.icon} w-6 h-4`}></i>
+                            <span className="ml-1">{item.name}</span>
+                        </div>
+                    ))}
+                </div>
 
 
 
@@ -98,11 +108,11 @@ const Feed = () => {
                     <div className='flex items-center gap-4 justify-between'>
                         <div className='flex gap-5 items-center'>
 
-                        <img src={Profile} className='w-14 h-14 rounded-full border-2 border-yellow-400' alt='...'></img>
+                        <img src={Profile} className='w-12 h-12 rounded-full border-2 border-yellow-400' alt='...'></img>
 
                             <div className='mt-5'>
                                 <div className='flex gap-2 w-full items-center'>
-                                    <p className='text-xl font-bold'>Roshan SK</p><p className='text-sm text-slate-500'>52 D</p>
+                                    <p className='text-lg font-bold'>Roshan SK</p><p className='text-sm text-slate-500'>52 D</p>
                                 </div>
                                 <div>
                                     <p className='text-sm text-slate-600'>Data Analyst</p>
@@ -111,13 +121,13 @@ const Feed = () => {
                         </div>
                         <div>
                             <span className='flex text-yellow-500 gap-2 text-sm items-end'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-base">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                         </svg> Posted on May-25-2024
                             </span>
                         </div>
                     </div>                 
-
+                    <div className="m-5">
                         <div>
                             <h1 className='mb-3 text-xl font-bold'>Intgeration of AI in WebApp</h1>
                         </div>
@@ -129,7 +139,7 @@ const Feed = () => {
                             </p>
                      </div>
 
-                     <div className="m-5">
+                     
   <div className='container'>
     <TECarousel showControls showIndicators ride="carousel">
       <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
@@ -184,7 +194,7 @@ const Feed = () => {
                         <img src={Profile} className='w-14 h-14 rounded-full border-2 border-yellow-400' alt='...'></img>
                             <div className='mt-5'>
                                 <div className='flex gap-2 w-full items-center'>
-                                    <p className='text-xl font-bold'>Roshan SK</p><p className='text-sm text-slate-500'>52 D</p>
+                                    <p className='text-lg font-bold'>Roshan SK</p><p className='text-sm text-slate-500'>52 D</p>
                                 </div>
                                 <div>
                                     <p className='text-sm text-slate-600'>Data Analyst</p>
@@ -193,7 +203,7 @@ const Feed = () => {
                         </div>
                         <div>
                             <span className='flex text-yellow-500 gap-2 text-sm items-end'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-base">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                         </svg> Posted on May-25-2024
                             </span>
@@ -265,7 +275,7 @@ const Feed = () => {
                         <img src={Profile} className='w-14 h-14 rounded-full border-2 border-yellow-400' alt='...'></img>
                             <div className='mt-5'>
                                 <div className='flex gap-2 w-full items-center'>
-                                    <p className='text-xl font-bold'>Roshan SK</p><p className='text-sm text-slate-500'>52 D</p>
+                                    <p className='text-lg font-bold'>Roshan SK</p><p className='text-sm text-slate-500'>52 D</p>
                                 </div>
                                 <div>
                                     <p className='text-sm text-slate-600'>Data Analyst</p>
@@ -274,7 +284,7 @@ const Feed = () => {
                         </div>
                         <div>
                             <span className='flex text-yellow-500 gap-2 text-sm items-end'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-base">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                         </svg> Posted on May-25-2024
                             </span>
