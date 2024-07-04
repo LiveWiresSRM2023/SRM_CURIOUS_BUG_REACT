@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
+import postImg from '../assets/images/post.png';
 
 const PostInteraction = () => {
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,14 @@ const PostInteraction = () => {
   return (
     <div>
       <Navbar />
+
+      <div>
+
+      </div>
+
+      <div>
+
+      </div>
       
     </div>
   );
