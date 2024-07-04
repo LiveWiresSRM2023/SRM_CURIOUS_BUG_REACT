@@ -119,10 +119,10 @@ const Feed = () => {
                     </div>                 
 
                         <div>
-                            <h1 className='mb-3 text-2xl font-bold'>Intgeration of AI in WebApp</h1>
+                            <h1 className='mb-3 text-xl font-bold'>Intgeration of AI in WebApp</h1>
                         </div>
                         <div>
-                            <p className='mb-2 text-justify text-lg'>
+                            <p className='mb-2 text-justify text-base'>
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
@@ -202,10 +202,10 @@ const Feed = () => {
 
                     <div className="m-5">
                         <div>
-                            <h1 className='mb-3 text-2xl font-bold'>Intgeration of AI in WebApp</h1>
+                            <h1 className='mb-3 text-xl font-bold'>Intgeration of AI in WebApp</h1>
                         </div>
                         <div>
-                            <p className='mb-2 text-justify text-lg'>
+                            <p className='mb-2 text-justify text-base'>
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
@@ -283,11 +283,11 @@ const Feed = () => {
 
                     <div className="m-5">
                         <div>
-                            <h1 className='mb-3 text-2xl font-bold'>Intgeration of AI in WebApp</h1>
+                            <h1 className='mb-3 text-xl font-bold'>Intgeration of AI in WebApp</h1>
                         </div>
 
                         <div>
-                            <p className='mb-2 text-justify text-lg'>
+                            <p className='mb-2 text-justify text-base'>
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
                             Learn how to create a concise and comprehensive project summary with our example report templates. Find out what to include, how to title, and how to write a project summary for internal and external purposes.
