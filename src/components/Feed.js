@@ -351,7 +351,7 @@ const Feed = () => {
 
         <div className=' w-1/3 h-full p-1'>
 
-        <div className='overflow-y-scroll scrollbar h-full'>
+        <div className='overflow-y-scroll h-full scrollbar'>
 
             <h1 className='m-5 text-xl font-bold'>Events</h1>
             
