@@ -76,7 +76,7 @@ const Login = () => {
       <div className='pb-10'>
       <img src={logo} className='h-[80px] w-[150px] ' alt="..." />
       </div>
-      
+
       <div className='p-1 flex flex-col '>
          <label htmlFor="" className='font-bold pb-2' >First name</label>
          <input className='w-[400px] h-[35px] rounded shadow-sm ' type="text" 
@@ -128,4 +128,3 @@ const Login = () => {
 
 
 export default Login
-

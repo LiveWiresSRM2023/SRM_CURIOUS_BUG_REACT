@@ -110,7 +110,6 @@ const Feed = () => {
 
                         <img src={Profile} className='w-12 h-12 rounded-full border-2 border-yellow-400' alt='...'></img>
 
-
                             <div className='mt-5'>
                                 <div className='flex gap-2 w-full items-center'>
                                     <p className='text-lg font-bold'>Roshan SK</p><p className='text-sm text-slate-500'>52 D</p>
