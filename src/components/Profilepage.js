@@ -322,7 +322,7 @@ function Youknow() {
    return(
       <>
       <div className="flex items-center gap-4 pb-3 pt-3">
-      <img src={pic} alt="" className="h-[60px] w-[60px] rounded-[50%] object-cover" />
+      <img src={pic} alt="" className="h-[45px] w-[45px] rounded-[50%] object-cover" />
       <div>
          <h3 className="font-semibold text-[18px] "> Seyadu Raja K</h3>
          <h5 className="font-semibold text-[15px]">React Developer</h5>
@@ -462,7 +462,6 @@ useEffect(() => {
                        <img src={twitter} alt="" className="h-[25px] w-[25px]" />    
 
                      </div>
-``
                      <div className="">
                      <button className="bg-black rounded-[30px] w-[150px] h-[35px] text-[15px] text-white font-bold">
                            Edit profile
@@ -507,14 +506,14 @@ useEffect(() => {
         {/* the end of right side */}
 
         <div className="w-[27%] flex flex-col items-center">
-          <div className=" w-[99%] m-5 ml-0 p-4 bg-white rounded-lg mt-3 mb-2 mr-12">
-               <h1 className="font-bold text-[20px] pb-2">User ID</h1>
+          <div className=" w-[99%] h-[10%] m-5 ml-0 p-4 bg-white rounded-lg mt-3 mb-2 mr-12">
+               <h1 className="font-bold text-[15px] pb-2">User ID : </h1>
                <h1 className=" text-[15px] text-[#25316D]">www.srmcuriousbees.in/Seyadu Raja K</h1>
           </div>
           {/* end of the user id  */}
 
           <div className="w-[98%] m-5 ml-0 mt-0 p-4 bg-white rounded-lg mb-2 mr-12">
-              <h1 className="font-bold text-[20px] pb-3">You might know:</h1>
+              <h1 className="font-bold text-[18px] pb-3">You might know:</h1>
 
                <Youknow/>
                <Youknow/>
@@ -529,7 +528,7 @@ useEffect(() => {
           {/* end of the you might know */}
 
           <div className="w-[98%] m-5 ml-0 mt-0 p-4 bg-white rounded-lg mr-12">
-               <h1 className="font-bold text-[20px] pb-3">Interests:</h1>
+               <h1 className="font-bold text-[18px] pb-3">Interests:</h1>
           </div>
 
 
