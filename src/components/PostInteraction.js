@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import postImg from '../assets/images/post.png';
-import Profile from '../assets/images/logo.png';
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
