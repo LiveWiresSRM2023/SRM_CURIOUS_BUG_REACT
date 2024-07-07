@@ -357,7 +357,7 @@ const Feed = () => {
             
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
-                    <p>Web Development workshop</p>
+                    <p className='pr-4'>Web Development workshop</p> 
                     <button className='rounded-full border p-1 text-sm text-white bg-green-500'>
                         Live
                     </button>
@@ -372,7 +372,7 @@ const Feed = () => {
             </div>
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
-                    <p>Web Development workshop</p>
+                    <p className='pr-4'>Data Warehousing and Data Mining class</p>
                     <button className='rounded-full border p-1 text-sm  text-white bg-yellow-500'>
                         Ongoing
                     </button>
@@ -387,7 +387,7 @@ const Feed = () => {
             </div>
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
-                    <p>Web Development workshop</p>
+                    <p className='pr-4'>Bootcamp on Generative AI</p>
                     <button className='rounded-full border p-1 text-sm  text-white bg-red-500'>
                         Closed
                     </button>
@@ -403,7 +403,7 @@ const Feed = () => {
 
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
-                    <p>Web Development workshop</p>
+                    <p className='pr-4'>Flutter Workshop</p>
                     <button className='rounded-full border p-1 text-sm  text-white bg-green-500'>
                         Live
                     </button>
@@ -418,7 +418,7 @@ const Feed = () => {
             </div>
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
-                    <p>Web Development workshop</p>
+                    <p className='pr-4'>Web Development workshop</p>
                     <button className='rounded-full border p-1 text-sm  text-white bg-yellow-500'>
                         Ongoing
                     </button>
@@ -433,7 +433,7 @@ const Feed = () => {
             </div>
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
-                    <p>Web Development workshop</p>
+                    <p className='pr-4'>TEAM LW meet</p>
                     <button className='rounded-full border p-1 text-sm  text-white bg-red-500'>
                         Closed
                     </button>
