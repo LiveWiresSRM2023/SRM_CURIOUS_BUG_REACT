@@ -507,7 +507,7 @@ useEffect(() => {
 
         <div className="w-[27%] flex flex-col items-center">
           <div className=" w-[99%] h-[10%] m-5 ml-0 p-4 bg-white rounded-lg mt-3 mb-2 mr-12">
-               <h1 className="font-bold text-[15px] pb-2">User ID : </h1>
+               <h1 className="font-bold text-[18px] pb-2">User ID : </h1>
                <h1 className=" text-[15px] text-[#25316D]">www.srmcuriousbees.in/Seyadu Raja K</h1>
           </div>
           {/* end of the user id  */}
