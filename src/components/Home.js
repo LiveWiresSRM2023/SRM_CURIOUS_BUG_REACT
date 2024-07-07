@@ -1,20 +1,18 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Feed from "./Feed"
-
-const feed = () => {
+const Home = () => {
   return (
     
     <div>
-        <div>
-          <Navbar/>
-        </div>
-        <div>
-          <Feed/>
-        </div>
+      <Navbar/>
+      <div>
+      <Feed/>
+      </div>
+
     </div>
   
   )
 }
 
-export default feed
+export default Home

@@ -1,7 +1,6 @@
 import logo from '../assets/images/logo.png';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-
 import React, { useState, useEffect } from 'react';
 import { firestore, auth } from '../configuration/firebase'; // Import your Firestore instance and auth
 import { Navigate } from 'react-router-dom';
@@ -11,7 +10,6 @@ import { onAuthStateChanged } from 'firebase/auth';
 
 const Login = () => {
 
-
   const [currentUser, setCurrentUser] = useState(null);
   const [firstName, setFirstName] = useState("");
   const [department, setDepartment] = useState("");
@@ -19,6 +17,8 @@ const Login = () => {
   const [college, setCollege] = useState("");
   const [position, setPosition] = useState("");
   const [redirect, setRedirect] = useState(false); // State to control redirection
+
+
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -66,7 +66,7 @@ const Login = () => {
 
   // Render Navigate component if redirect state is true
   if (redirect) {
-    return <Navigate to="/Home"/>;
+    return <Navigate to="/Home" />;
   }
 
 
@@ -128,3 +128,4 @@ const Login = () => {
 
 
 export default Login
+
