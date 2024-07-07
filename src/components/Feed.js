@@ -355,66 +355,58 @@ const Feed = () => {
 
         </div>
 
-        <div className=' w-1/4 h-full p-1'>
+        <div className=' w-1/3 h-full p-1'>
 
-        <div className='container overflow-scroll scrollbar-hide border rounded-lg'>
+        <div className='scrollbar border rounded-lg'>
 
-            <h1 className='m-5 font-bold'>
+            <h1 className='m-5 text-xl font-bold'>
                 Events
              </h1>
             
-            <div className='m-5 p-5 h-full  rounded-md font-bold border  gap-2'>
-                <div className='flex gap-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-yellow-500">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-                    </svg>
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
                     <p>Web Development workshop</p>
-                    <button className='rounded-full border p-1 text-sm bg-yellow-500'>
+                    <button className='rounded-full border p-1 text-sm bg-green-500'>
                         Live
                     </button>
                 </div>
                 
-                <div className='font-medium text-slate-500 ml-6'>
-                    <p>Venue : <span>SRMIST</span></p>
+                <div className='text-sm'>
+                    <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
                 </div>
 
             </div>
-            <div className='m-5 p-5 rounded-md border font-bold gap-2'>
-                <div className='flex gap-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-yellow-500">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-                    </svg>
-                    <p>Talks on Responsive AI</p>
-                    <button className='rounded-full border p-1 text-sm bg-green-500'>
-                        ongoing
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p>Web Development workshop</p>
+                    <button className='rounded-full border p-1 text-sm bg-yellow-500'>
+                        Ongoing
                     </button>
                 </div>
-                <div className='ml-3 font-medium text-slate-500 ml-6'>
-                    <p>Venue : <span>SRMIST</span></p>
+                
+                <div className='text-sm'>
+                    <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
                 </div>
-            </div>
-            <div className='m-5 p-5 rounded-md border font-bold gap-2'>
-                <div className='flex gap-2'>
-                    <div className='flex gap-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-yellow-500">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-                        </svg>
-                        <p>Team Livewires Meet up</p>
-                    </div>
 
-                    <button className='rounded-full border p-1 text-sm bg-red-600'>
+            </div>
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p>Web Development workshop</p>
+                    <button className='rounded-full border p-1 text-sm bg-red-500'>
                         Closed
                     </button>
                 </div>
-                <div className='font-medium text-slate-500 ml-6'>
-                    <p>Venue : <span>SRMIST</span></p>
+                
+                <div className='text-sm'>
+                    <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
                 </div>
+
             </div>
             
         </div> 
