@@ -15,13 +15,13 @@ const Feed = () => {
     };
 
   return (
-    <div>
+    <div className='bg-[#d7d5d5]'>
 
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
-    <div className='flex w-screen fixed'>
-            <div className='w-1/4 h-full p-1 container overflow-scroll scrollbar'>
-                <div className='container border rounded-lg'>
+    <div className='flex w-screen fixed '>
+            <div className='w-1/4 h-full p-1 '>
+                
                     {[
                         { name: 'Business', icon: 'fa-briefcase' },
                         { name: 'Science', icon: 'fa-flask' },
@@ -38,12 +38,9 @@ const Feed = () => {
                             <span className="ml-1">{item.name}</span>
                         </div>
                     ))}
-                </div>
 
 
-
-            <div className='container border mt-1 rounded-lg'>
-                <h1 className='m-5 font-bold'>
+                <h1 className='m-5 font-bold text-lg'>
                     <u>Followed Hashtags</u>
                 </h1>
 
@@ -64,9 +61,7 @@ const Feed = () => {
                         </svg> SRMIST
                     </div>  
                 </div>
-            </div>
 
-            <div className='container border rounded-lg mt-1 '>
                 <h1 className='m-5 font-bold'>
                     <u>My Posts</u>
                 </h1>
@@ -98,13 +93,12 @@ const Feed = () => {
                     </div>
                 </div>
                 </div>
-            </div>
         </div>
 
         <div className='border-yellow-300 w-3/5 h-screen pb-20 overflow-scroll scrollbar'>
 
             <div className='pb-20'>
-                <div className='container p-5 mt-1 border rounded-lg'>
+                <div className='container p-5 mt-1 '>
                     <div className='flex items-center gap-4 justify-between'>
                         <div className='flex gap-5 items-center'>
 
@@ -357,12 +351,58 @@ const Feed = () => {
 
         <div className=' w-1/3 h-full p-1'>
 
-        <div className='scrollbar border rounded-lg'>
+        <div className='scrollbar-default'>
 
             <h1 className='m-5 text-xl font-bold'>
                 Events
              </h1>
             
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p>Web Development workshop</p>
+                    <button className='rounded-full border p-1 text-sm bg-green-500'>
+                        Live
+                    </button>
+                </div>
+                
+                <div className='text-sm'>
+                    <p>Venue : SRMIST</p>
+                    <p>Date : <span>2024-20-04</span></p>
+                    <p>Timing : <span>20:23:18</span></p>
+                </div>
+
+            </div>
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p>Web Development workshop</p>
+                    <button className='rounded-full border p-1 text-sm bg-yellow-500'>
+                        Ongoing
+                    </button>
+                </div>
+                
+                <div className='text-sm'>
+                    <p>Venue : SRMIST</p>
+                    <p>Date : <span>2024-20-04</span></p>
+                    <p>Timing : <span>20:23:18</span></p>
+                </div>
+
+            </div>
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p>Web Development workshop</p>
+                    <button className='rounded-full border p-1 text-sm bg-red-500'>
+                        Closed
+                    </button>
+                </div>
+                
+                <div className='text-sm'>
+                    <p>Venue : SRMIST</p>
+                    <p>Date : <span>2024-20-04</span></p>
+                    <p>Timing : <span>20:23:18</span></p>
+                </div>
+
+            </div>
+
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
                     <p>Web Development workshop</p>
