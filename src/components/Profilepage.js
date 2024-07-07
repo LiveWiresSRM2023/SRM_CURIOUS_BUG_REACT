@@ -422,7 +422,7 @@ useEffect(() => {
     <div className=' w-[100%] flex  bg-[#d7d5d5] ' >
     {OpenPost && <Post onClose = {() => setOpenPost(false)} />}
         <div className="w-[73%] flex flex-col items-center">
-           <div className="w-[95%]  bg-white m-5 rounded-lg">
+           <div className="w-[95%]  bg-white m-5 rounded-lg ml-1 mt-3 mb-2">
 
             <div className="flex justify-between ">
               
@@ -433,7 +433,7 @@ useEffect(() => {
                </div>
              
                <div className="flex flex-col p-[20px] pl-[0px] pt-[0px] ">
-                     <h1 className="text-[20px] font-bold pt-4 pb-4">Summary</h1>
+                     <h1 className="text-[20px] font-bold pt-4 pb-2">Summary</h1>
                      <div className="flex gap-[5px]">
                         <h3 className="font-bold">Position:</h3>
                         <h3>{userData.position}</h3>
@@ -462,7 +462,7 @@ useEffect(() => {
                        <img src={twitter} alt="" className="h-[25px] w-[25px]" />    
 
                      </div>
-
+``
                      <div className="">
                      <button className="bg-black rounded-[30px] w-[150px] h-[35px] text-[15px] text-white font-bold">
                            Edit profile
@@ -474,7 +474,7 @@ useEffect(() => {
            </div>
         {/* end of the intro part  */}
 
-        <div className="w-[95%]  bg-white m-5 rounded-lg mt-0 p-4">
+        <div className="w-[95%]  bg-white m-5 rounded-lg mt-0 p-4 ml-1 mb-2">
             <h1 className="font-bold text-[20px] pb-3">About</h1>
             <div>
             <p className={`text-justify text-[14px] ${Isshow? null : 'line-clamp-2' }`}>React developers are specialized software engineers who focus on building user interfaces (UIs) using the React.js library. 
@@ -487,7 +487,7 @@ useEffect(() => {
 
         {/* end of the about */}
          
-       <div className="w-[95%]  bg-white m-5 rounded-lg mt-0 p-4">
+       <div className="w-[95%]  bg-white m-5 rounded-lg mt-0 ml-1 p-4">
          <div className="flex items-center justify-between">
             <h1 className="font-bold text-[20px] pb-2">Activity</h1>
             <button onClick={() => setOpenPost(true)} className="bg-black text-white font-bold rounded-[30px] w-[100px] h-[35px] text-[15px]">
@@ -507,13 +507,13 @@ useEffect(() => {
         {/* the end of right side */}
 
         <div className="w-[27%] flex flex-col items-center">
-          <div className=" w-[95%] m-5 ml-0 p-4 bg-white rounded-lg">
+          <div className=" w-[99%] m-5 ml-0 p-4 bg-white rounded-lg mt-3 mb-2 mr-12">
                <h1 className="font-bold text-[20px] pb-2">User ID</h1>
                <h1 className=" text-[15px] text-[#25316D]">www.srmcuriousbees.in/Seyadu Raja K</h1>
           </div>
           {/* end of the user id  */}
 
-          <div className="w-[95%] m-5 ml-0 mt-0 p-4 bg-white rounded-lg">
+          <div className="w-[98%] m-5 ml-0 mt-0 p-4 bg-white rounded-lg mb-2 mr-12">
               <h1 className="font-bold text-[20px] pb-3">You might know:</h1>
 
                <Youknow/>
@@ -528,8 +528,8 @@ useEffect(() => {
           
           {/* end of the you might know */}
 
-          <div className="w-[95%] m-5 ml-0 mt-0 p-4 bg-white rounded-lg">
-               <h1 className="font-bold text-[20px] pb-3">Disciplines:</h1>
+          <div className="w-[98%] m-5 ml-0 mt-0 p-4 bg-white rounded-lg mr-12">
+               <h1 className="font-bold text-[20px] pb-3">Interests:</h1>
           </div>
 
 
