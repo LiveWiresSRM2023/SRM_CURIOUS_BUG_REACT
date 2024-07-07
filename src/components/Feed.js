@@ -19,7 +19,7 @@ const Feed = () => {
 
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
-    <div className='flex w-screen fixed '>
+    <div className='flex w-screen fixed overflow-scroll scrollbar '>
             <div className='w-1/4 h-full p-1 '>
                 
                     {[
@@ -351,21 +351,19 @@ const Feed = () => {
 
         <div className=' w-1/3 h-full p-1'>
 
-        <div className='scrollbar-default'>
+        <div className='overflow-y-scroll scrollbar h-full'>
 
-            <h1 className='m-5 text-xl font-bold'>
-                Events
-             </h1>
+            <h1 className='m-5 text-xl font-bold'>Events</h1>
             
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
                     <p>Web Development workshop</p>
-                    <button className='rounded-full border p-1 text-sm bg-green-500'>
+                    <button className='rounded-full border p-1 text-sm text-white bg-green-500'>
                         Live
                     </button>
                 </div>
                 
-                <div className='text-sm'>
+                <div className='font-normal text-sm'>
                     <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
@@ -375,12 +373,12 @@ const Feed = () => {
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
                     <p>Web Development workshop</p>
-                    <button className='rounded-full border p-1 text-sm bg-yellow-500'>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-yellow-500'>
                         Ongoing
                     </button>
                 </div>
                 
-                <div className='text-sm'>
+                <div className='font-normal text-sm'>
                     <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
@@ -390,12 +388,12 @@ const Feed = () => {
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
                     <p>Web Development workshop</p>
-                    <button className='rounded-full border p-1 text-sm bg-red-500'>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-red-500'>
                         Closed
                     </button>
                 </div>
                 
-                <div className='text-sm'>
+                <div className='font-normal text-sm'>
                     <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
@@ -406,12 +404,12 @@ const Feed = () => {
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
                     <p>Web Development workshop</p>
-                    <button className='rounded-full border p-1 text-sm bg-green-500'>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-green-500'>
                         Live
                     </button>
                 </div>
                 
-                <div className='text-sm'>
+                <div className='font-normal text-sm'>
                     <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
@@ -421,12 +419,12 @@ const Feed = () => {
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
                     <p>Web Development workshop</p>
-                    <button className='rounded-full border p-1 text-sm bg-yellow-500'>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-yellow-500'>
                         Ongoing
                     </button>
                 </div>
                 
-                <div className='text-sm'>
+                <div className='font-normal text-sm'>
                     <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
@@ -436,12 +434,12 @@ const Feed = () => {
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
                     <p>Web Development workshop</p>
-                    <button className='rounded-full border p-1 text-sm bg-red-500'>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-red-500'>
                         Closed
                     </button>
                 </div>
                 
-                <div className='text-sm'>
+                <div className='font-normal text-sm '>
                     <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
