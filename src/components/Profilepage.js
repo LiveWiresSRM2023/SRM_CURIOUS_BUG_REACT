@@ -528,15 +528,36 @@ useEffect(() => {
           {/* end of the you might know */}
 
           <div className="w-[98%] m-5 ml-0 mt-0 p-4 bg-white rounded-lg mr-12">
-               <h1 className="font-bold text-[18px] pb-3">Interests:</h1>
-          </div>
-
-
-         
+    <h1 className="font-bold text-[18px] pb-3">Interests:</h1>
+    <div className="flex items-center mb-3">
+        <div className="rounded-md border text-[14px] font-semibold border-black inline-block px-3 py-1">
+            <h3 className="text-black ">Machine Learning</h3>
         </div>
+        <span className="text-gray-500 ml-auto text-[14px]">Intermediate</span>
     </div>
+    <div className="flex items-center mb-3">
+        <div className="rounded-md border text-[14px] font-semibold border-black inline-block px-3 py-1">
+            <h3 className="text-black">Deep Learning</h3>
+        </div>
+        <span className="text-gray-500 ml-auto text-[14px]">Beginner</span>
     </div>
+    <div className="flex items-center mb-3">
+        <div className="rounded-md border text-[14px] font-semibold border-black inline-block px-3 py-1">
+            <h3 className="text-black">NLP</h3>
+        </div>
+        <span className="text-gray-500 ml-auto text-[14px]">Expert</span>
+    </div>
+</div>
+</div>
 
+  
+
+            
+
+
+
+    </div>
+    </div>
 )
     
 }
