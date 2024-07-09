@@ -17,7 +17,7 @@ import { useState,useEffect } from "react";
 import { firestore,auth } from "../configuration/firebase";
 import Navbar from "./Navbar";
 import Post from "./Post";
-import Feed from "./Feed";
+
 
 
 
