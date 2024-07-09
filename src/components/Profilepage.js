@@ -162,8 +162,8 @@ useEffect(() => {
                    <h3 className="text-[15px] font-semibold">Chennai</h3>
                </div>
              
-               <div className="flex flex-col p-[20px] pl-[0px] pt-[0px] ">
-                     <h1 className="text-[20px] font-bold pt-4 pb-2">Summary</h1>
+               <div className="flex flex-col p-[px] pl-[0px] pt-[0px] ">
+                     <h1 className="text-[22px] font-bold pt-2 pb-2">Summary</h1>
                      <div className="flex gap-[5px]">
                         <h3 className="font-bold">Position:</h3>
                         <h3>{userData.position}</h3>
