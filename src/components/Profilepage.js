@@ -17,6 +17,7 @@ import { useState,useEffect } from "react";
 import { firestore,auth } from "../configuration/firebase";
 import Navbar from "./Navbar";
 import Post from "./Post";
+import Feed from "./Feed";
 
 
 
@@ -65,7 +66,9 @@ function Youknow() {
 }
 
 
+
 const Profile = () => {
+
 
    
 
@@ -77,7 +80,7 @@ const Profile = () => {
    const [userName, setUserName] = useState("");
    const [photoURL, setPhotoUrl] = useState("");
    // const [userEmail, setUserEmail] = useState("");
-
+   
 
    const [Isshow, setIsshow] = useState(false);
    // const [OpenPost , setOpenPost] = useState(false)
@@ -155,8 +158,8 @@ useEffect(() => {
            <div className="w-[95%]  bg-white m-5 rounded-lg ml-1 mt-3 mb-2">
 
             <div className="flex justify-between ">
-              
-               <div className=" flex flex-col items-center gap-[10px] p-[20px] pr-[0px]">
+            
+               <div className=" flex flex-col items-center gap-[10px] p-[20px] pl-[14px] pr-[0px]">
                    <img src={photoURL} alt="" className="h-[160px] w-[160px] rounded-[50%] object-cover  " />
                    <h1 className="font-bold text-[20px] ">{userName}</h1> 
                    <h3 className="text-[15px] font-semibold">Chennai</h3>
