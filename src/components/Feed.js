@@ -350,11 +350,8 @@ const Feed = () => {
         </div>
 
         <div className=' w-1/3 h-full p-1'>
-
         <div className='overflow-y-scroll h-full scrollbar'>
-
             <h1 className='m-5 text-xl font-bold'>Events</h1>
-            
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
                     <p className='pr-4'>Web Development workshop</p> 
