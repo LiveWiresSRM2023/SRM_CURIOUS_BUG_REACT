@@ -15,13 +15,13 @@ const Feed = () => {
     };
 
   return (
-    <div>
+    <div className='bg-[#d7d5d5]'>
 
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
-    <div className='flex w-screen fixed'>
-            <div className='w-1/4 h-full p-1 container overflow-scroll scrollbar'>
-                <div className='container border rounded-lg'>
+    <div className='flex w-screen fixed overflow-scroll scrollbar '>
+            <div className='w-1/4 h-full p-1 '>
+                
                     {[
                         { name: 'Business', icon: 'fa-briefcase' },
                         { name: 'Science', icon: 'fa-flask' },
@@ -38,12 +38,9 @@ const Feed = () => {
                             <span className="ml-1">{item.name}</span>
                         </div>
                     ))}
-                </div>
 
 
-
-            <div className='container border mt-1 rounded-lg'>
-                <h1 className='m-5 font-bold'>
+                <h1 className='m-5 font-bold text-lg'>
                     <u>Followed Hashtags</u>
                 </h1>
 
@@ -64,9 +61,7 @@ const Feed = () => {
                         </svg> SRMIST
                     </div>  
                 </div>
-            </div>
 
-            <div className='container border rounded-lg mt-1 '>
                 <h1 className='m-5 font-bold'>
                     <u>My Posts</u>
                 </h1>
@@ -98,13 +93,12 @@ const Feed = () => {
                     </div>
                 </div>
                 </div>
-            </div>
         </div>
 
         <div className='border-yellow-300 w-3/5 h-screen pb-20 overflow-scroll scrollbar'>
 
             <div className='pb-20'>
-                <div className='container p-5 mt-1 border rounded-lg'>
+                <div className='container p-5 mt-1 '>
                     <div className='flex items-center gap-4 justify-between'>
                         <div className='flex gap-5 items-center'>
 
@@ -355,66 +349,99 @@ const Feed = () => {
 
         </div>
 
-        <div className=' w-1/4 h-full p-1'>
-
-        <div className='container overflow-scroll scrollbar-hide border rounded-lg'>
-
-            <h1 className='m-5 font-bold'>
-                Events
-             </h1>
-            
-            <div className='m-5 p-5 h-full  rounded-md font-bold border  gap-2'>
-                <div className='flex gap-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-yellow-500">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-                    </svg>
-                    <p>Web Development workshop</p>
-                    <button className='rounded-full border p-1 text-sm bg-yellow-500'>
+        <div className=' w-1/3 h-full p-1'>
+        <div className='overflow-y-scroll h-full scrollbar'>
+            <h1 className='m-5 text-xl font-bold'>Events</h1>
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p className='pr-4'>Web Development workshop</p> 
+                    <button className='rounded-full border p-1 text-sm text-white bg-green-500'>
                         Live
                     </button>
                 </div>
                 
-                <div className='font-medium text-slate-500 ml-6'>
-                    <p>Venue : <span>SRMIST</span></p>
+                <div className='font-normal text-sm'>
+                    <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
                 </div>
 
             </div>
-            <div className='m-5 p-5 rounded-md border font-bold gap-2'>
-                <div className='flex gap-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-yellow-500">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-                    </svg>
-                    <p>Talks on Responsive AI</p>
-                    <button className='rounded-full border p-1 text-sm bg-green-500'>
-                        ongoing
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p className='pr-4'>Data Warehousing and Data Mining class</p>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-yellow-500'>
+                        Ongoing
                     </button>
                 </div>
-                <div className='ml-3 font-medium text-slate-500 ml-6'>
-                    <p>Venue : <span>SRMIST</span></p>
+                
+                <div className='font-normal text-sm'>
+                    <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
                 </div>
-            </div>
-            <div className='m-5 p-5 rounded-md border font-bold gap-2'>
-                <div className='flex gap-2'>
-                    <div className='flex gap-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-yellow-500">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-                        </svg>
-                        <p>Team Livewires Meet up</p>
-                    </div>
 
-                    <button className='rounded-full border p-1 text-sm bg-red-600'>
+            </div>
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p className='pr-4'>Bootcamp on Generative AI</p>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-red-500'>
                         Closed
                     </button>
                 </div>
-                <div className='font-medium text-slate-500 ml-6'>
-                    <p>Venue : <span>SRMIST</span></p>
+                
+                <div className='font-normal text-sm'>
+                    <p>Venue : SRMIST</p>
                     <p>Date : <span>2024-20-04</span></p>
                     <p>Timing : <span>20:23:18</span></p>
                 </div>
+
+            </div>
+
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p className='pr-4'>Flutter Workshop</p>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-green-500'>
+                        Live
+                    </button>
+                </div>
+                
+                <div className='font-normal text-sm'>
+                    <p>Venue : SRMIST</p>
+                    <p>Date : <span>2024-20-04</span></p>
+                    <p>Timing : <span>20:23:18</span></p>
+                </div>
+
+            </div>
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p className='pr-4'>Web Development workshop</p>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-yellow-500'>
+                        Ongoing
+                    </button>
+                </div>
+                
+                <div className='font-normal text-sm'>
+                    <p>Venue : SRMIST</p>
+                    <p>Date : <span>2024-20-04</span></p>
+                    <p>Timing : <span>20:23:18</span></p>
+                </div>
+
+            </div>
+            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
+                <div className='flex gap-2 text-base'>
+                    <p className='pr-4'>TEAM LW meet</p>
+                    <button className='rounded-full border p-1 text-sm  text-white bg-red-500'>
+                        Closed
+                    </button>
+                </div>
+                
+                <div className='font-normal text-sm '>
+                    <p>Venue : SRMIST</p>
+                    <p>Date : <span>2024-20-04</span></p>
+                    <p>Timing : <span>20:23:18</span></p>
+                </div>
+
             </div>
             
         </div> 

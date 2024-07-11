@@ -64,7 +64,7 @@ window.addEventListener('scroll', colourchange)
 
 
       <div className="flex items-center gap-4 pr-4 ">
-         <button onClick={() => setOpenPost(true)} className="bg-black text-white font-bold rounded-[30px] w-[100px] h-[35px] text-[15px] mt-3">Create +</button>
+         <button onClick={() => setOpenPost(true)} className="bg-black text-white font-bold rounded-[15px] w-[100px] h-[35px] text-[15px] mt-3">Create +</button>
          <img src={notif} alt="" className="h-[25px] w-[25px] mt-3"/>
          <img src={message} alt="" className="h-[30px] w-[30px] mt-3" />
          <div className="flex items-center gap-2 mt-3" onClick={()=> {navigate("/profile")}}>
