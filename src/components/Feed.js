@@ -66,7 +66,7 @@ const Feed = () => {
 
                 <hr className='my-4 border-black' />
 
-                <h1 className='m-5 font-bold'>
+                <h1 className='m-5 font-bold text-lg'>
                     <u>My Posts</u>
                 </h1>
                 <div className='h-56 whitespace-nowrap'>
@@ -99,7 +99,7 @@ const Feed = () => {
                 </div>
         </div>
 
-        <div className='border-yellow-300 w-3/5 h-screen pb-20 overflow-scroll scrollbar'>
+        <div className='border-l-4 border-grey-500 w-3/5 h-screen pb-20 overflow-scroll scrollbar'>
 
             <div className='pb-20'>
                 <div className='container p-5 mt-1 '>
@@ -353,8 +353,7 @@ const Feed = () => {
 
         </div>
 
-        <div className=' w-1/3 h-full p-1 overflow-scroll scrollbar'>
-        <div className=''>
+        <div className='ml-2 border-l-4 border-grey-500 w-1/3 h-full p-1 overflow-scroll'>
             <h1 className='m-5 text-xl font-bold'>Events</h1>
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
@@ -446,7 +445,6 @@ const Feed = () => {
                     <p>Timing : <span>20:23:18</span></p>
                 </div>
 
-            </div>
             
         </div> 
         {/* <div className='border rounded-lg p-2'>
