@@ -16,6 +16,7 @@ code {
 @tailwind components;
 @tailwind utilities;
 
+
 /* Custom scrollbar styles */
 .overflow-scroll {
   overflow-y: auto; /* Enable vertical scrollbar */
