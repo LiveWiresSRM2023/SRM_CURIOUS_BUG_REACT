@@ -19,7 +19,7 @@ const Feed = () => {
 
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
-    <div className='flex w-screen fixed overflow-scroll scrollbar '>
+    <div className='flex w-screen fixed overflow-scroll scrollbar z-[-1] '>
             <div className='w-1/4 h-full p-1 '>
                 
                     {[
