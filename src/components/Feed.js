@@ -19,7 +19,7 @@ const Feed = () => {
 
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
-    <div className='flex w-screen fixed overflow-scroll scrollbar '>
+        <div className='flex w-screen fixed'>
             <div className='w-1/4 h-full p-1 '>
                 
                     {[
@@ -38,6 +38,8 @@ const Feed = () => {
                             <span className="ml-1">{item.name}</span>
                         </div>
                     ))}
+
+                    <hr className='my-4 border-black' />
 
 
                 <h1 className='m-5 font-bold text-lg'>
@@ -61,6 +63,8 @@ const Feed = () => {
                         </svg> SRMIST
                     </div>  
                 </div>
+
+                <hr className='my-4 border-black' />
 
                 <h1 className='m-5 font-bold'>
                     <u>My Posts</u>
@@ -349,8 +353,8 @@ const Feed = () => {
 
         </div>
 
-        <div className=' w-1/3 h-full p-1'>
-        <div className='overflow-y-scroll h-full scrollbar'>
+        <div className=' w-1/3 h-full p-1 overflow-scroll scrollbar'>
+        <div className=''>
             <h1 className='m-5 text-xl font-bold'>Events</h1>
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
