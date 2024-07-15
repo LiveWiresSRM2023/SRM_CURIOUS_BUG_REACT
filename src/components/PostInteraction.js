@@ -30,7 +30,13 @@ const PostInteraction = () => {
     <div>
       <Navbar />
 
-      
+      <div>
+
+      </div>
+
+      <div>
+
+      </div>
       
     </div>
   );
