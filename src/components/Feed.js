@@ -39,6 +39,8 @@ const Feed = () => {
                         </div>
                     ))}
 
+                    <hr className='my-4 border-black' />
+
 
                 <h1 className='m-5 font-bold text-lg'>
                     <u>Followed Hashtags</u>
@@ -62,7 +64,9 @@ const Feed = () => {
                     </div>  
                 </div>
 
-                <h1 className='m-5 font-bold'>
+                <hr className='my-4 border-black' />
+
+                <h1 className='m-5 font-bold text-lg'>
                     <u>My Posts</u>
                 </h1>
                 <div className='h-56 whitespace-nowrap'>
@@ -95,7 +99,7 @@ const Feed = () => {
                 </div>
         </div>
 
-        <div className='border-yellow-300 w-3/5 h-screen pb-20 overflow-scroll scrollbar'>
+        <div className='border-l-4 border-grey-500 w-3/5 h-screen pb-20 overflow-scroll scrollbar'>
 
             <div className='pb-20'>
                 <div className='container p-5 mt-1 '>
@@ -349,12 +353,11 @@ const Feed = () => {
 
         </div>
 
-        <div className=' w-1/3 h-full p-1'>
-        <div className='overflow-y-scroll h-full scrollbar'>
+        <div className=' w-1/4 h-full p-1 overflow-scroll mr-2'>
             <h1 className='m-5 text-xl font-bold'>Events</h1>
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
-                    <p className='pr-4'>Web Development workshop</p> 
+                    <p className='pr-4'>Web Dev workshop</p> 
                     <button className='rounded-full border p-1 text-sm text-white bg-green-500'>
                         Live
                     </button>
@@ -369,7 +372,7 @@ const Feed = () => {
             </div>
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
-                    <p className='pr-4'>Data Warehousing and Data Mining class</p>
+                    <p className='pr-4'>Data Warehousing</p>
                     <button className='rounded-full border p-1 text-sm  text-white bg-yellow-500'>
                         Ongoing
                     </button>
@@ -384,7 +387,7 @@ const Feed = () => {
             </div>
             <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
                 <div className='flex gap-2 text-base'>
-                    <p className='pr-4'>Bootcamp on Generative AI</p>
+                    <p className='pr-4'>Generative AI</p>
                     <button className='rounded-full border p-1 text-sm  text-white bg-red-500'>
                         Closed
                     </button>
@@ -413,38 +416,8 @@ const Feed = () => {
                 </div>
 
             </div>
-            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
-                <div className='flex gap-2 text-base'>
-                    <p className='pr-4'>Web Development workshop</p>
-                    <button className='rounded-full border p-1 text-sm  text-white bg-yellow-500'>
-                        Ongoing
-                    </button>
-                </div>
-                
-                <div className='font-normal text-sm'>
-                    <p>Venue : SRMIST</p>
-                    <p>Date : <span>2024-20-04</span></p>
-                    <p>Timing : <span>20:23:18</span></p>
-                </div>
-
-            </div>
-            <div className='m-5 p-2 h-full  rounded-md font-bold border bg-blue-100 gap-2'>
-                <div className='flex gap-2 text-base'>
-                    <p className='pr-4'>TEAM LW meet</p>
-                    <button className='rounded-full border p-1 text-sm  text-white bg-red-500'>
-                        Closed
-                    </button>
-                </div>
-                
-                <div className='font-normal text-sm '>
-                    <p>Venue : SRMIST</p>
-                    <p>Date : <span>2024-20-04</span></p>
-                    <p>Timing : <span>20:23:18</span></p>
-                </div>
-
-            </div>
             
-        </div> 
+            
         {/* <div className='border rounded-lg p-2'>
             <div className='flex items-center w-full justify-between'> 
             <div className='flex items-center gap-2'>

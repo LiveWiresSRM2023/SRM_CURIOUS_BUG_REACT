@@ -83,19 +83,7 @@ const Profile = () => {
    
 
    const [Isshow, setIsshow] = useState(false);
-   // const [OpenPost , setOpenPost] = useState(false)
-   // const [Colour , setColour] = useState(false)
 
-//    const colourchange = () => {
-//       if (window.scrollY >= 5 ) {
-//         setColour(true)
-//       }
-//       else {
-//         setColour(false)
-//       }
-//    }
-
-// window.addEventListener('scroll', colourchange)
 
 
 useEffect(() => {
@@ -152,7 +140,7 @@ useEffect(() => {
  return(
    <div>
           <Navbar/>
-    <div className=' w-[100%] flex  bg-[#d7d5d5] ' >
+    <div className='overflow-scroll w-[100%] flex  bg-[#d7d5d5] ' >
     {OpenPost && <Post onClose = {() => setOpenPost(false)} />}
         <div className="w-[73%] flex flex-col items-center">
            <div className="w-[95%]  bg-white m-5 rounded-lg ml-1 mt-3 mb-2">
